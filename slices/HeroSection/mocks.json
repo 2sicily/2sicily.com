@@ -1,0 +1,27 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "HeroSection",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "In aute eiusmod veniam ipsum esse do eu. Est ipsum proident id laborum dolore dolore eu quis enim aliqua anim.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Sint non eiusmod sit irure ad reprehenderit nisi. Voluptate irure cupidatat qui ullamco.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "hero_section"
+  }
+]
