@@ -1,0 +1,27 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "FooterSection",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Deserunt tempor nulla id aliqua ex irure elit ipsum in quis duis est minim. Mollit velit fugiat exercitation id qui. Labore eu nisi ea esse consequat occaecat ad occaecat velit reprehenderit commodo.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Deserunt nostrud ex nisi.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "footer_section"
+  }
+]

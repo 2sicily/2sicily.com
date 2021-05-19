@@ -3,7 +3,7 @@ import SliceZone from "next-slicezone";
 import { useGetStaticProps, useGetStaticPaths } from "next-slicezone/hooks";
 
 import resolver from "../sm-resolver.js";
-import Layout from "./../components/Layout";
+import Layout from "../components/Layout";
 
 const Page = (props) => {
   return (

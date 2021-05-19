@@ -71,5 +71,25 @@
       }
     }
   },
-  "HeroSection": {}
+  "HeroSection": {},
+  "ContactSection": {
+    "primary": {
+      "address": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "FeatureLeft": {
+    "primary": {
+      "buttonlabel": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  }
 }

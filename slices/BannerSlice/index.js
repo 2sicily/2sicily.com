@@ -9,9 +9,11 @@ const BannerSlice = ({ slice }) => (
         <div>
           <RichText render={slice.primary.description} />
         </div>
-        <a href={Link.url(slice.primary.link)}>
-          { slice.primary.linkLabel }
+        <Link href={linkResolver(slice.primary.link)}>
+        <a>
+        <RichText render={slice.primary.linkLabel} />
         </a>
+      </Link>
       </div>
       
     </section>

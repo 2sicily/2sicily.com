@@ -1,0 +1,27 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "FeatureRight",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Nulla sint sit enim anim enim deserunt incididunt veniam aliqua.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Culpa magna cillum id ea amet. Et voluptate labore sunt incididunt est sint tempor non do ea cillum sint irure exercitation.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "feature_right"
+  }
+]

@@ -23,14 +23,10 @@ export const linkResolver = (doc) => {
 };
 
 export const customLink = (type, element, content, children, index) => (
-  <Link
-    key={index}
-    href={linkResolver(element.data)}
-    as={linkResolver(element.data)}
-  >
-    <a>{content}</a>
+  <Link key={element.data.id} as={linkResolver(element.data)}>
+      <a>{content}</a>
   </Link>
-);
+)
 
 export const Router = {
   routes: [{"type":"page","path":"/:uid"}],

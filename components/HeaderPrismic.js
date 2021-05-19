@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText, Link as PLink } from 'prismic-reactjs'
+import { RichText, Link as PrismicLink } from 'prismic-reactjs'
 import Link from "next/link";
 
 
@@ -19,7 +19,7 @@ const Links = ({menuLinks}) => {
         <ul>
           {menuLinks.map((menuLink, index) => (
             <li key={`menulink-${index}`}>
-              <Link href={PLink.url(menuLink.link)}>
+              <Link href={PrismicLink.url(menuLink.link)}>
                 {RichText.asText(menuLink.label)}
               </Link>
             </li>

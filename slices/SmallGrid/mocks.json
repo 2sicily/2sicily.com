@@ -1,0 +1,27 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "SmallGrid",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Nisi incididunt enim ipsum eu est eiusmod. Labore magna ad pariatur.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Cillum anim exercitation sit nostrud qui do labore ex dolor excepteur nostrud amet.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "small_grid"
+  }
+]
