@@ -4,14 +4,15 @@ import HeaderPrismic from './HeaderPrismic'
 import { RichText } from "prismic-reactjs";
 
 const Layout = ({ children, props, menu }) => {
+  const info = require('../data/info.json');
   if (props && props.data) {
     const meta_title = props.data.meta_title
     const meta_desc = props.data.meta_description
-  
+    
     return (
       <div>
         <Head>
-          <title>2Sicily&nbsp;{meta_title && `| ${meta_title}`}</title>
+          <title>{info.name}&nbsp;{meta_title && `| ${meta_title}`}</title>
           <meta 
             name='description' 
             content = {meta_desc}
