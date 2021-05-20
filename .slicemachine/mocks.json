@@ -91,5 +91,26 @@
         }
       }
     }
+  },
+  "SmallGrid": {
+    "items": {
+      "title": {
+        "content": null
+      },
+      "description": {
+        "content": null
+      },
+      "buttonlabel": {
+        "content": null
+      }
+    },
+    "primary": {
+      "title": {
+        "content": null
+      },
+      "description": {
+        "content": null
+      }
+    }
   }
 }

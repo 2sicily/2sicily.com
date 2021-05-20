@@ -6,22 +6,47 @@
     "version": "sktwi1xtmkfgx8626",
     "description": "SmallGrid",
     "primary": {
-      "title": [
-        {
-          "type": "paragraph",
-          "text": "Nisi incididunt enim ipsum eu est eiusmod. Labore magna ad pariatur.",
-          "spans": []
-        }
-      ],
-      "description": [
-        {
-          "type": "paragraph",
-          "text": "Cillum anim exercitation sit nostrud qui do labore ex dolor excepteur nostrud amet.",
-          "spans": []
-        }
-      ]
+      "title": "e-enable out-of-the-box eyeballs",
+      "description": "cultivate dot-com infrastructures"
     },
-    "items": [],
+    "items": [
+      {
+        "title": "extend extensible infomediaries",
+        "description": "expedite end-to-end e-commerce",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+        },
+        "buttonlabel": "integrate visionary models",
+        "buttonlink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "title": "drive one-to-one architectures",
+        "description": "extend turn-key technologies",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+        },
+        "buttonlabel": "empower dynamic experiences",
+        "buttonlink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
     "slice_type": "small_grid"
   }
 ]
