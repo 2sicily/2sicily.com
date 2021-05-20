@@ -7,9 +7,9 @@ import Layout from "../components/Layout";
 
 const Page = (props) => {
   return (
-    <Layout menu={props.menu}>
+    
+    <Layout props={props} menu={props.menu}>
       <SliceZone {...props} resolver={resolver} />
-      {/* <div>{props}</div> */}
     </Layout>
   )
 };
@@ -28,3 +28,5 @@ export const getStaticPaths = useGetStaticPaths({
 });
 
 export default Page;
+
+

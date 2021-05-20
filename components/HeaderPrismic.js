@@ -5,9 +5,11 @@ import Link from "next/link";
 
 const HeaderPrismic = ({ menu = [] }) => (
     <header className="site-header">
-      <a href="/" className="logo">
-        {RichText.asText(menu.data.title)}
-      </a>
+      <Link href="/">
+        <a className="logo">
+          {RichText.asText(menu.data.title)}
+        </a>
+      </Link>
       <Links menuLinks={menu.data.menu_links} />
     </header>
 );
