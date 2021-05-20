@@ -16,6 +16,7 @@ const Layout = ({ children, props, menu }) => {
             name='description' 
             content = {meta_desc}
           />
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
         </Head>
         
         <HeaderPrismic menu={menu} />
