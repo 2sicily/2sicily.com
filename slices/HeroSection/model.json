@@ -26,6 +26,14 @@
             "label": "Description",
             "placeholder": "A nice description of your feature"
           }
+        },
+        "logo": {
+          "config": {
+            "label": "Logo",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
         }
       },
       "items": {}
