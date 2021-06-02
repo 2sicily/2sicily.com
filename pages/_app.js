@@ -1,7 +1,7 @@
 import '../styles/index.css'
 import React from 'react'
 import NextApp from 'next/app'
-import { Client } from "../prismic-configuration";
+import { Client } from "../utils/prismicHelpers";
 
 export default class MyApp extends NextApp {
   static async getInitialProps(appCtx) {
