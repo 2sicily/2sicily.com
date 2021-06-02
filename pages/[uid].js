@@ -15,17 +15,38 @@ const Page = (props) => {
 };
 
 // Fetch content from prismic
+// export const getStaticProps = useGetStaticProps({
+//   client: Client(),
+//   uid: ({ params }) => params.uid
+// });
+
+// export const getStaticPaths = useGetStaticPaths({
+//   client: Client(),
+//   type: "page",
+//   fallback: process.env.NODE_ENV === "development",
+//   formatPath: ({ uid }) => ({ params: { uid } }),
+// });
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  uid: ({ params }) => params.uid
-});
+  apiParams({ params }) {
+    return {
+      lang: params.lang,
+      uid: params.uid,
+    }
+  },
+})
 
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
-  type: "page",
-  fallback: process.env.NODE_ENV === "development",
-  formatPath: ({ uid }) => ({ params: { uid } }),
-});
+  formatPath: (prismicDocument) => {
+    return {
+      params: {
+        uid: prismicDocument.uid,
+        lang: prismicDocument.lang,
+      },
+    }
+  },
+})
 
 export default Page;
 
