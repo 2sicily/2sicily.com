@@ -9,17 +9,26 @@
       "title": [
         {
           "type": "paragraph",
-          "text": "In aute eiusmod veniam ipsum esse do eu. Est ipsum proident id laborum dolore dolore eu quis enim aliqua anim.",
+          "text": "Fugiat laboris incididunt deserunt. Sunt dolore est est laborum adipisicing nostrud.",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Sint non eiusmod sit irure ad reprehenderit nisi. Voluptate irure cupidatat qui ullamco.",
+          "text": "Sint velit eu consectetur id proident esse laborum consequat fugiat laborum elit.",
           "spans": []
         }
-      ]
+      ],
+      "logo": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+      }
     },
     "items": [],
     "slice_type": "hero_section"
