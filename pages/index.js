@@ -15,32 +15,12 @@ const Page = (props) => {
 };
 
 // Fetch content from prismic
-
-// export async function getStaticProps({
-//   preview, 
-//   previewData,
-//   locale,
-//   locales,
-// }) {
-//   return useGetStaticProps({
-//     client: Client(),
-//     uid: 'home', 
-//     queryType: 'single',
-//     apiParams() {
-//       return {
-//         lang: 'it-it',
-//       }
-//     },
-//   })
-// }
-
 export const getStaticProps = useGetStaticProps({
     client: Client(),
     queryType: 'repeat',
     type: 'page',
     apiParams() {
       return {
-        lang: 'it-it',
         uid: 'home',
       }
     },

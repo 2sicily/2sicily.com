@@ -21,7 +21,6 @@ export const getStaticProps = useGetStaticProps({
   type: 'page',
   apiParams({params}) {
     return {
-      lang: 'it-it',
       uid: params.uid,
     }
   },
@@ -29,10 +28,14 @@ export const getStaticProps = useGetStaticProps({
 
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
-  type: "page",
-  fallback: process.env.NODE_ENV === "development",
-  formatPath: ({ uid }) => ({ params: { uid } }),
-});
+  formatPath: (prismicDocument) => {
+    return {
+      params: {
+        uid: prismicDocument.uid,
+      },
+    }
+  },
+})
 
 export default Page;
 
