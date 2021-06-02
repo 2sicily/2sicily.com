@@ -17,24 +17,15 @@ const Page = (props) => {
 // Fetch content from prismic
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  type: 'page', 
-  apiParams({ params }) {
-    return {
-      uid: params.uid,
-    }
-  },
-})
+  uid: ({ params }) => params.uid
+});
 
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
-  formatPath: (prismicDocument) => {
-    return {
-      params: {
-        uid: prismicDocument.uid,
-      },
-    }
-  },
-})
+  type: "page",
+  fallback: process.env.NODE_ENV === "development",
+  formatPath: ({ uid }) => ({ params: { uid } }),
+});
 
 export default Page;
 
