@@ -17,7 +17,14 @@ const Page = (props) => {
 // Fetch content from prismic
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  uid: ({ params }) => params.uid
+    queryType: 'repeat',
+    type: 'page',
+    apiParams({params}) {
+      return {
+        lang: 'it-it',
+        uid: params.uid,
+      }
+    },
 });
 
 export const getStaticPaths = useGetStaticPaths({

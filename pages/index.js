@@ -36,11 +36,12 @@ const Page = (props) => {
 
 export const getStaticProps = useGetStaticProps({
     client: Client(),
-    uid: 'home', 
-    queryType: 'single',
+    queryType: 'repeat',
+    type: 'page',
     apiParams() {
       return {
         lang: 'it-it',
+        uid: 'home',
       }
     },
   })
