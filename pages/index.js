@@ -8,15 +8,44 @@ import Layout from "./../components/Layout";
 const Page = (props) => {
   return (
     <Layout props={props} menu={props.menu}>
+      {JSON.stringify(props)}
       <SliceZone {...props} resolver={resolver} />
     </Layout>
   );
 };
 
 // Fetch content from prismic
+
+// export async function getStaticProps({
+//   preview, 
+//   previewData,
+//   locale,
+//   locales,
+// }) {
+//   return useGetStaticProps({
+//     client: Client(),
+//     uid: 'home', 
+//     queryType: 'single',
+//     apiParams() {
+//       return {
+//         lang: 'it-it',
+//       }
+//     },
+//   })
+// }
+
 export const getStaticProps = useGetStaticProps({
-  client: Client(),
-  uid: () => "home",
-});
+    client: Client(),
+    uid: 'home', 
+    queryType: 'single',
+    apiParams() {
+      return {
+        lang: 'it-it',
+      }
+    },
+  })
+
+
+  
 
 export default Page;
