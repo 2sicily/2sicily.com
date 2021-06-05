@@ -1,28 +1,29 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-import { createResolver } from "next-slicezone/resolver";
-
-import { apiEndpoint } from "./../sm.json"; // import the endpoint name
-const prismicRepoName = /([a-zA-Z0-9-]+)?(\.cdn)?\.prismic\.io/.exec(apiEndpoint)[1] //Regex to get repo ID
-
-export default class extends Document {
+class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    await createResolver();
-    return { ...initialProps };
+    const initialProps = await Document.getInitialProps(ctx)
+    return { ...initialProps }
   }
 
   render() {
     return (
       <Html>
         <Head>
-          <script async defer src={`//static.cdn.prismic.io/prismic.js?repo=${prismicRepoName}&new=true`} />
+          <meta charSet="utf-8" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+            rel="stylesheet"
+          />
+          <link rel="icon" href="/favicon.png" type="image/png" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
-};
+}
+
+export default MyDocument
