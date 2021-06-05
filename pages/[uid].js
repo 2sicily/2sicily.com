@@ -1,7 +1,7 @@
 import SliceZone from "next-slicezone";
 import { useGetStaticPaths, useGetStaticProps } from 'next-slicezone/hooks'
-import { queryRepeatableDocuments } from './utils/queries';
-import { Client, manageLocal } from './utils/prismicHelpers';
+import { queryRepeatableDocuments } from '../utils/queries';
+import { Client, manageLocal } from '../utils/prismicHelpers';
 
 import resolver from "../sm-resolver.js";
 import Layout from "../components/Layout";
