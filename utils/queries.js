@@ -20,6 +20,6 @@ export const queryRepeatableDocuments = async (filter) => {
 
 export const homePageQuery = async () => {
   const allRoutes = await fetchDocs();
-  return allRoutes.filter((doc) => doc.type === 'homepage').slice(0, 5);
+  return allRoutes.filter((doc) => doc.type === 'home_page').slice(0, 5);
 };
 
