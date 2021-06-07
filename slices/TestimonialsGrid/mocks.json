@@ -1,0 +1,38 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TestimonialsGrid",
+    "primary": {
+      "pretitle": "maximize best-of-breed ROI",
+      "heading": "recontextualize granular relationships",
+      "description": "recontextualize front-end web services",
+      "linktext": "aggregate best-of-breed synergies",
+      "link": {
+        "link_type": "Web",
+        "url": "http://twitter.com"
+      }
+    },
+    "items": [
+      {
+        "testimonial": "monetize web-enabled e-services",
+        "name": "grow 24/7 initiatives"
+      },
+      {
+        "testimonial": "harness bricks-and-clicks technologies",
+        "name": "aggregate interactive eyeballs"
+      },
+      {
+        "testimonial": "unleash mission-critical networks",
+        "name": "disintermediate cross-media metrics"
+      },
+      {
+        "testimonial": "streamline 24/7 e-services",
+        "name": "generate granular architectures"
+      }
+    ],
+    "slice_type": "testimonials_grid"
+  }
+]

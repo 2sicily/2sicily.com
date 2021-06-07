@@ -6,13 +6,14 @@
     "version": "sktwi1xtmkfgx8626",
     "description": "SmallGrid",
     "primary": {
-      "title": "e-enable out-of-the-box eyeballs",
-      "description": "cultivate dot-com infrastructures"
+      "pretitle": "mesh end-to-end technologies",
+      "heading": "enhance global users",
+      "description": "deploy front-end methodologies"
     },
     "items": [
       {
-        "title": "extend extensible infomediaries",
-        "description": "expedite end-to-end e-commerce",
+        "heading": "mesh out-of-the-box solutions",
+        "description": "transform customized systems",
         "image": {
           "dimensions": {
             "width": 900,
@@ -20,17 +21,17 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
         },
-        "buttonlabel": "integrate visionary models",
-        "buttonlink": {
+        "linktext": "scale e-business partnerships",
+        "link": {
           "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "http://google.com"
         }
       },
       {
-        "title": "drive one-to-one architectures",
-        "description": "extend turn-key technologies",
+        "heading": "exploit granular infomediaries",
+        "description": "implement customized action-items",
         "image": {
           "dimensions": {
             "width": 900,
@@ -38,10 +39,28 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
         },
-        "buttonlabel": "empower dynamic experiences",
-        "buttonlink": {
+        "linktext": "reinvent ubiquitous schemas",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "heading": "grow one-to-one e-services",
+        "description": "e-enable 24/7 initiatives",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+        },
+        "linktext": "redefine cross-platform platforms",
+        "link": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         }

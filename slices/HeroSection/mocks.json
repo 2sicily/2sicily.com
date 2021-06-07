@@ -6,31 +6,55 @@
     "version": "sktwi1xtmkfgx8626",
     "description": "HeroSection",
     "primary": {
-      "title": [
-        {
-          "type": "paragraph",
-          "text": "Fugiat laboris incididunt deserunt. Sunt dolore est est laborum adipisicing nostrud.",
-          "spans": []
-        }
-      ],
-      "description": [
-        {
-          "type": "paragraph",
-          "text": "Sint velit eu consectetur id proident esse laborum consequat fugiat laborum elit.",
-          "spans": []
-        }
-      ],
-      "logo": {
+      "image": {
         "dimensions": {
           "width": 900,
           "height": 500
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
-      }
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+      },
+      "heading": "envisioneer next-generation web services",
+      "description": "utilize revolutionary content"
     },
-    "items": [],
+    "items": [
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "linktext": "grow one-to-one portals"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "linktext": "empower one-to-one infrastructures"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linktext": "morph transparent functionalities"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linktext": "utilize impactful architectures"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linktext": "reinvent magnetic web-readiness"
+      }
+    ],
     "slice_type": "hero_section"
   }
 ]

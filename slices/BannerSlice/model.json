@@ -11,23 +11,21 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "BannerSlice",
       "primary": {
-        "title": {
+        "heading": {
+          "type": "Text",
           "config": {
-            "label": "Title",
-            "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading1"
-          },
-          "type": "StructuredText"
+            "label": "",
+            "id": "heading",
+            "placeholder": ""
+          }
         },
         "description": {
+          "type": "Text",
           "config": {
-            "label": "Description",
-            "placeholder": "A nice description of your feature",
-            "allowTargetBlank": true,
-            "single": "paragraph"
-          },
-          "type": "StructuredText"
+            "label": "",
+            "id": "description",
+            "placeholder": ""
+          }
         },
         "link": {
           "type": "Link",
@@ -38,21 +36,13 @@
             "allowTargetBlank": true
           }
         },
-        "linkLabel": {
+        "linktext": {
           "type": "Text",
           "config": {
             "label": "",
-            "id": "linkLabel",
+            "id": "linktext",
             "placeholder": ""
           }
-        },
-        "background": {
-          "config": {
-            "label": "",
-            "constraint": {},
-            "thumbnails": []
-          },
-          "type": "Image"
         }
       },
       "items": {}

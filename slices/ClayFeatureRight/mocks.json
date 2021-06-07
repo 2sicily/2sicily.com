@@ -1,0 +1,30 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "ClayFeatureRight",
+    "primary": {
+      "pretitle": "harness integrated relationships",
+      "heading": "cultivate ubiquitous convergence",
+      "description": "implement enterprise synergies",
+      "link": {
+        "link_type": "Web",
+        "url": "http://twitter.com"
+      },
+      "linktext": "matrix 24/365 metrics",
+      "image": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+      }
+    },
+    "items": [],
+    "slice_type": "clay_feature_right"
+  }
+]

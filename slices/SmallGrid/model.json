@@ -11,58 +11,69 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "SmallGrid",
       "primary": {
-        "title": {
+        "pretitle": {
+          "type": "Text",
           "config": {
-            "label": "Title",
+            "label": "",
+            "id": "pretitle",
             "placeholder": ""
-          },
-          "type": "Text"
+          }
+        },
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "heading",
+            "placeholder": ""
+          }
         },
         "description": {
+          "type": "Text",
           "config": {
-            "label": "Description",
+            "label": "",
+            "id": "description",
             "placeholder": ""
-          },
-          "type": "Text"
+          }
         }
       },
       "items": {
-        "title": {
+        "heading": {
           "config": {
-            "label": "Title",
+            "label": "",
             "placeholder": ""
           },
           "type": "Text"
         },
         "description": {
           "config": {
-            "label": "Description",
+            "label": "",
             "placeholder": ""
           },
           "type": "Text"
         },
         "image": {
           "config": {
-            "label": "Image",
+            "label": "",
             "constraint": {},
             "thumbnails": []
           },
           "type": "Image"
         },
-        "buttonlabel": {
+        "linktext": {
           "config": {
-            "label": "Button Label",
+            "label": "",
             "placeholder": ""
           },
           "type": "Text"
         },
-        "buttonlink": {
+        "link": {
+          "type": "Link",
           "config": {
-            "label": "Button Link",
+            "label": "",
+            "id": "link",
             "placeholder": "",
             "allowTargetBlank": true
-          },
-          "type": "Link"
+          }
         }
       }
     }

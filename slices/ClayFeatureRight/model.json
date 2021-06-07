@@ -1,23 +1,22 @@
 {
-  "id": "hero_section",
+  "id": "clay_feature_right",
   "type": "SharedSlice",
-  "name": "HeroSection",
-  "description": "HeroSection",
+  "name": "ClayFeatureRight",
+  "description": "ClayFeatureRight",
   "variations": [
     {
       "id": "default-slice",
       "name": "Default slice",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "HeroSection",
+      "description": "ClayFeatureRight",
       "primary": {
-        "image": {
-          "type": "Image",
+        "pretitle": {
+          "type": "Text",
           "config": {
-            "id": "image",
             "label": "",
-            "constraint": {},
-            "thumbnails": []
+            "id": "pretitle",
+            "placeholder": ""
           }
         },
         "heading": {
@@ -35,9 +34,7 @@
             "id": "description",
             "placeholder": ""
           }
-        }
-      },
-      "items": {
+        },
         "link": {
           "type": "Link",
           "config": {
@@ -54,8 +51,18 @@
             "id": "linktext",
             "placeholder": ""
           }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "id": "image",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
-      }
+      },
+      "items": {}
     }
   ]
 }

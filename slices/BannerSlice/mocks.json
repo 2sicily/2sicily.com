@@ -6,34 +6,13 @@
     "version": "sktwi1xtmkfgx8626",
     "description": "BannerSlice",
     "primary": {
-      "title": [
-        {
-          "type": "heading1",
-          "text": "Visualize killer content",
-          "spans": []
-        }
-      ],
-      "description": [
-        {
-          "type": "paragraph",
-          "text": "Consequat eu duis dolor eu fugiat et.",
-          "spans": []
-        }
-      ],
+      "heading": "synergize efficient functionalities",
+      "description": "visualize customized ROI",
       "link": {
         "link_type": "Web",
         "url": "https://prismic.io"
       },
-      "linkLabel": "integrate frictionless web-readiness",
-      "background": {
-        "dimensions": {
-          "width": 900,
-          "height": 500
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=900&h=500&fit=crop"
-      }
+      "linktext": "synthesize strategic interfaces"
     },
     "items": [],
     "slice_type": "banner_slice"

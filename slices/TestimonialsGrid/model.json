@@ -1,23 +1,22 @@
 {
-  "id": "hero_section",
+  "id": "testimonials_grid",
   "type": "SharedSlice",
-  "name": "HeroSection",
-  "description": "HeroSection",
+  "name": "TestimonialsGrid",
+  "description": "TestimonialsGrid",
   "variations": [
     {
       "id": "default-slice",
       "name": "Default slice",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "HeroSection",
+      "description": "TestimonialsGrid",
       "primary": {
-        "image": {
-          "type": "Image",
+        "pretitle": {
+          "type": "Text",
           "config": {
-            "id": "image",
             "label": "",
-            "constraint": {},
-            "thumbnails": []
+            "id": "pretitle",
+            "placeholder": ""
           }
         },
         "heading": {
@@ -29,15 +28,20 @@
           }
         },
         "description": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "linktext": {
           "type": "Text",
           "config": {
             "label": "",
-            "id": "description",
+            "id": "linktext",
             "placeholder": ""
           }
-        }
-      },
-      "items": {
+        },
         "link": {
           "type": "Link",
           "config": {
@@ -46,12 +50,22 @@
             "placeholder": "",
             "allowTargetBlank": true
           }
-        },
-        "linktext": {
+        }
+      },
+      "items": {
+        "testimonial": {
           "type": "Text",
           "config": {
             "label": "",
-            "id": "linktext",
+            "id": "testimonial",
+            "placeholder": ""
+          }
+        },
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "name",
             "placeholder": ""
           }
         }

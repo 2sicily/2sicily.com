@@ -78,21 +78,14 @@ export default function Example({ menu }) {
     },
     { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
   ]
-  const recentPosts = [
-    { id: 1, name: 'Boost your conversion rate', href: '#' },
-    { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-    { id: 3, name: 'Improve your customer experience', href: '#' },
-  ]
-
 
   return (
     <Popover className="relative bg-white">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex-col items-end border-b-2 border-gray-100 py-6 md:justify-start">
-              <div className="flex justify-center">
-                {JSON.stringify(menu.data.body[0].primary.link_text)}
+            <div className="flex-col items-end py-6 md:justify-start">
+              <div className="flex justify-center py-4">
                 <Link href="/">
                   <a>
                     <span className="sr-only">2 Sicily</span>
@@ -181,7 +174,7 @@ export default function Example({ menu }) {
                 </Popover>
                 {menu.data.body.map((item) => (
                   <Link href={item.primary.link_text}>
-                  <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  <a className="text-base font-light capitalize text-gray-500 hover:text-gray-900">
                     {item.primary.link_text}
                   </a>
                   </Link>
@@ -193,17 +186,6 @@ export default function Example({ menu }) {
                 </a>
 
               </Popover.Group>
-              {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                  Sign in
-                </a>
-                <a
-                  href="#"
-                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                >
-                  Sign up
-                </a>
-              </div> */}
             </div>
           </div>
 
