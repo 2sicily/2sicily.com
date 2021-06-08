@@ -1,0 +1,15 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "AzureHeaderSection",
+    "primary": {
+      "heading": "integrate back-end e-business",
+      "description": "iterate virtual partnerships"
+    },
+    "items": [],
+    "slice_type": "azure_header_section"
+  }
+]

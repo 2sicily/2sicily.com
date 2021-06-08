@@ -27,8 +27,8 @@ export async function getStaticProps({
   const client = Client();
   const doc =
     (await client.getByUID(
-      'page',
-      params.uid,
+      'primary_page',
+      params.primary_page_url,
       { lang: locale }
     )) || {};
   const menu =

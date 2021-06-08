@@ -10,7 +10,7 @@ const Layout = ({ children, props, menu }) => {
     const meta_desc = props.data.meta_description
     
     return (
-      <div>
+      <div className="bg-brand-white min-h-screen">
         <Head>
           <title>{info.name}&nbsp;{meta_title && `| ${meta_title}`}</title>
           <meta 

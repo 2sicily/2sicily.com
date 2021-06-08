@@ -1,0 +1,34 @@
+{
+  "id": "azure_header_section",
+  "type": "SharedSlice",
+  "name": "AzureHeaderSection",
+  "description": "AzureHeaderSection",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "AzureHeaderSection",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "heading",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "description",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
