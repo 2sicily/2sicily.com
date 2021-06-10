@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "La Luxes Serif";
-    src: "../public/fonts/laluxesserif/LaLuxesSerif.eot" format('embedded-opentype'), 
-    "../public/fonts/laluxesserif/LaLuxesSerif.woff" format("woff"),
-    "../public/fonts/laluxesserif/LaLuxesSerif.otf" format("opentype"),
-    "../public/fonts/laluxesserif/LaLuxesSerif.svg#LaLuxesSerif" format("svg");
-    }
+    font-family: 'la_luxes_serifregular';
+    src: url('/fonts/la_luxes_serif-webfont.woff2') format('woff2'),
+         url('/fonts/la_luxes_serif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

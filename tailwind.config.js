@@ -16,7 +16,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Lato', 'sans-serif'],
-      serif: ["La Luxes Serif", 'serif'],
+      serif: ['la_luxes_serifregular', 'serif'],
     },
   },
   variants: {},
