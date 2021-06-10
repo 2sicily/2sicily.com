@@ -4,9 +4,8 @@
 
 @font-face {
     font-family: "La Luxes Serif";
-    src: "../public/fonts/laluxesserif/LaLuxesSerif.eot";
-    src: "../public/fonts/laluxesserif/LaLuxesSerif.woff" format("woff"),
+    src: "../public/fonts/laluxesserif/LaLuxesSerif.eot" format('embedded-opentype'), 
+    "../public/fonts/laluxesserif/LaLuxesSerif.woff" format("woff"),
     "../public/fonts/laluxesserif/LaLuxesSerif.otf" format("opentype"),
-    "../public/fonts/laluxesserif/LaLuxesSerif.svg#filename" format("svg");
-    src: "../public/fonts/laluxesserif/LaLuxesSerif.eot"
+    "../public/fonts/laluxesserif/LaLuxesSerif.svg#LaLuxesSerif" format("svg");
     }
