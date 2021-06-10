@@ -260,7 +260,6 @@ export default function Example({ menu }) {
               </div>
             </Popover.Panel>
           </Transition>
-          {JSON.stringify(menu.data)}
         </>
       )}
     </Popover>
