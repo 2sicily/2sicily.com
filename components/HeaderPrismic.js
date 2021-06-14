@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
@@ -25,7 +25,6 @@ function classNames(...classes) {
 }
 
 export default function Example({ menu }) {
-
   const solutions = [
     {
       name: 'Analytics',
@@ -168,7 +167,7 @@ export default function Example({ menu }) {
                   )}
                 </Popover>
                   :
-                  "OOPS"
+                  "Error"
                 ))
                 }
                 

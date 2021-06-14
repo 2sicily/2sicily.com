@@ -10,4 +10,7 @@ module.exports = withTM({
     // a non-locale prefixed path e.g. `/hello`
     defaultLocale: 'en-gb',
   },
+  images: {
+    domains: ['images.prismic.io'],
+  },
 })
