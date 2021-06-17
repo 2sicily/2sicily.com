@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import HeaderPrismic from './HeaderPrismic'
+import FooterPrismic from './FooterPrismic'
 import { RichText } from "prismic-reactjs";
 
-const Layout = ({ children, props, menu }) => {
+const Layout = ({ children, props, menu, footer }) => {
   const info = require('../data/info.json');
   if (props && props.data) {
     const meta_title = props.data.meta_title
@@ -22,6 +23,7 @@ const Layout = ({ children, props, menu }) => {
         
         <HeaderPrismic menu={menu} />
         <main>{children}</main>
+        <FooterPrismic footer={footer} />
       </div>
     );
   };

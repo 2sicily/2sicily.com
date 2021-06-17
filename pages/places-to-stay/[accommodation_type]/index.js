@@ -8,7 +8,7 @@ import AccommodationGridSection from "../../../components/AccommodationGridSecti
 
 const Page = (props) => {
   return (
-    <Layout props={props.doc} menu={props.menu}>
+    <Layout props={props.doc} menu={props.menu} footer={props.footer}>
       <SliceZone slices={props.doc.data.body} resolver={resolver} />
       <AccommodationGridSection props={props.documents} />
     </Layout>
@@ -34,6 +34,9 @@ export async function getStaticProps({
   const menu =
     (await client.getSingle('menu', { lang: locale })) ||
     {};
+  const footer =
+    (await client.getSingle('footer_navigation', { lang: locale })) ||
+    {};
   if (params.accommodation_type === 'all') {
     const documents = await queryRepeatableDocuments(
       (doc) => doc.type === 'accommodation_page' && doc.data.accommodation_type !== params.accommodation_type
@@ -41,6 +44,7 @@ export async function getStaticProps({
       return {
         props: {
           menu,
+          footer,
           doc,
           lang:{
             currentLang,
@@ -56,6 +60,7 @@ export async function getStaticProps({
       return {
         props: {
           menu,
+          footer,
           doc,
           lang:{
             currentLang,

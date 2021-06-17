@@ -9,7 +9,7 @@ const Page = (props) => {
   return (
 
     // JSON.stringify(props.doc.data.meta_title)
-    <Layout props={props.doc} menu={props.menu}>
+    <Layout props={props.doc} menu={props.menu} footer={props.footer}>
       <SliceZone slices={props.doc.data.body} resolver={resolver} />
     </Layout>
   )
@@ -33,12 +33,16 @@ export async function getStaticProps({
   const menu =
     (await client.getSingle('menu', { lang: locale })) ||
     {};
+  const footer =
+  (await client.getSingle('footer_navigation', { lang: locale })) ||
+  {};
 
   const { currentLang, isMyMainLanguage } = manageLocal(locales, locale)
 
   return {
     props: {
       params,
+      footer,
       menu,
       doc,
       lang:{
