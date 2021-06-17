@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
+import { hrefResolver } from '../../prismic-configuration'
 
 const MySlice = ({ slice }) => (
   <section className="bg-brand-gray text-gray-800 py-12 px-8">
@@ -46,7 +47,7 @@ const MySlice = ({ slice }) => (
                   }
           </div>
          
-          <Link href={`/${item.link.uid}`}>
+          <Link href={hrefResolver(item.link)}>
           <a className="bg-brand-gray border border-brand-five text-brand-six px-3 py-2 font-serif hover:bg-opacity-90">
           {
             item.linktext &&

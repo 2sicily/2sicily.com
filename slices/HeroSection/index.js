@@ -7,9 +7,12 @@ import {hrefResolver} from '../../prismic-configuration'
 const MySlice = ({ slice }) => (
   <section className="bg-brand-zero text-brand-gray">
     <div className="w-full overflow-hidden z-0">
-      <img
-          className="w-full overflow-hidden z-0 bg-cover"
+      <Image
           src={`${slice.primary.image.url}`}
+          layout="responsive"
+          alt=""
+          width={`${slice.primary.image.dimensions.width}`}
+          height={`${slice.primary.image.dimensions.height}`}
         />
     </div>
     
