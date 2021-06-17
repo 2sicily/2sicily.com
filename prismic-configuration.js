@@ -18,10 +18,19 @@ module.exports = {
   // Manages links to internal Prismic documents
   // Modify as your project grows to handle any new routes you've made
   linkResolver: function(doc) {
-    if (doc.type === 'page') {
-      return `/${doc.lang}/${doc.uid}`;
+    if (doc.type === 'primary_page') {
+      return `/${doc.lang}/${doc.uid}}`;
     }
-    if (doc.type === 'homepage') {
+    if (doc.type === 'accommodation_page') {
+      return `/${doc.lang}/places-to-stay/${doc.data.accommodation_type}/${doc.uid}`;
+    }
+    if (doc.type === 'grid_page') {
+      return `/${doc.lang}/places-to-stay/${doc.uid}`;
+    }
+    if (doc.type === 'information_page') {
+      return `/${doc.lang}/information/${doc.uid}`;
+    }
+    if (doc.type === 'home_page') {
       return `/${doc.lang}`;
     }
     return '/';
@@ -29,10 +38,19 @@ module.exports = {
 
   // Additional helper function for Next/Link component
   hrefResolver: function(doc) {
-    if (doc.type === 'page') {
+    if (doc.type === 'primary_page') {
       return `/${doc.lang}/${doc.uid}`;
     }
-    if (doc.type === 'homepage') {
+    if (doc.type === 'accommodation_page') {
+      return `/${doc.lang}/places-to-stay/${doc.data.accommodation_type}/${doc.uid}`;
+    }
+    if (doc.type === 'grid_page') {
+      return `/${doc.lang}/places-to-stay/${doc.uid}`;
+    }
+    if (doc.type === 'information_page') {
+      return `/${doc.lang}/information/${doc.uid}`;
+    }
+    if (doc.type === 'home_page') {
       return `/${doc.lang}`;
     }
     return '/';

@@ -30,26 +30,46 @@ export async function getStaticProps({
       params.accommodation_type,
       { lang: locale }
     )) || {};
+  const { currentLang, isMyMainLanguage } = manageLocal(locales, locale)
   const menu =
     (await client.getSingle('menu', { lang: locale })) ||
     {};
-  const documents = await queryRepeatableDocuments(
-    (doc) => doc.type === 'accommodation_page' && doc.data.accommodation_type === params.accommodation_type
-    );
+  if (params.accommodation_type === 'all') {
+    const documents = await queryRepeatableDocuments(
+      (doc) => doc.type === 'accommodation_page' && doc.data.accommodation_type !== params.accommodation_type
+      );
+      return {
+        props: {
+          menu,
+          doc,
+          lang:{
+            currentLang,
+            isMyMainLanguage,
+          },
+          documents
+        },
+      };
+  } else {
+    const documents = await queryRepeatableDocuments(
+      (doc) => doc.type === 'accommodation_page' && doc.data.accommodation_type === params.accommodation_type
+      );
+      return {
+        props: {
+          menu,
+          doc,
+          lang:{
+            currentLang,
+            isMyMainLanguage,
+          },
+          documents
+        },
+      };
+  }
+  
 
-  const { currentLang, isMyMainLanguage } = manageLocal(locales, locale)
+  
 
-  return {
-    props: {
-      menu,
-      doc,
-      lang:{
-        currentLang,
-        isMyMainLanguage,
-      },
-      documents
-    },
-  };
+  
 }
 
 

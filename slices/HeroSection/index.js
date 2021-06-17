@@ -1,10 +1,12 @@
 import React from 'react';
 import { RichText } from 'prismic-reactjs';
 import Image from 'next/image'
+import Link from 'next/link';
+import {hrefResolver} from '../../prismic-configuration'
 
 const MySlice = ({ slice }) => (
   <section className="bg-brand-zero text-brand-gray">
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden z-0">
       <Image
           src={`${slice.primary.image.url}`}
           layout="responsive"
@@ -30,12 +32,14 @@ const MySlice = ({ slice }) => (
       </div>
       <div className="space-x-4 w-full flex justify-center">
         {slice.items.map((item) => (
-        <button className="bg-brand-gray border border-brand-two text-brand-zero px-3 py-2 font-serif hover:bg-opacity-90">
+        <Link href={hrefResolver(item.link)}>
+        <a className="bg-brand-gray border border-brand-two text-brand-zero px-3 py-2 font-serif hover:bg-opacity-90">
         {
           item.linktext &&
           <p>{item.linktext}</p>
         }
-        </button>
+        </a>
+        </Link>
       ))}
       </div>
     </div>
