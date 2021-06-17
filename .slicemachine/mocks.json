@@ -99,9 +99,7 @@
       }
     }
   },
-
   "AccommodationGridSection": {},
-  "AzureHeaderSection": {}
-
- 
+  "AzureHeaderSection": {},
+  "BreadcrumbNavigation": {}
 }

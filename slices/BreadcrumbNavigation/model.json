@@ -1,0 +1,17 @@
+{
+  "id": "breadcrumb_navigation",
+  "type": "SharedSlice",
+  "name": "BreadcrumbNavigation",
+  "description": "BreadcrumbNavigation",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "BreadcrumbNavigation",
+      "primary": {},
+      "items": {}
+    }
+  ]
+}

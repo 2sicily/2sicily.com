@@ -1,0 +1,12 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "BreadcrumbNavigation",
+    "primary": {},
+    "items": [],
+    "slice_type": "breadcrumb_navigation"
+  }
+]
