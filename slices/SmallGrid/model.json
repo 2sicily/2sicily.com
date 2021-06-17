@@ -39,21 +39,21 @@
       "items": {
         "heading": {
           "config": {
-            "label": "",
+            "label": "Heading",
             "placeholder": ""
           },
           "type": "Text"
         },
         "description": {
           "config": {
-            "label": "",
+            "label": "Description",
             "placeholder": ""
           },
           "type": "Text"
         },
         "image": {
           "config": {
-            "label": "",
+            "label": "Image",
             "constraint": {},
             "thumbnails": []
           },
@@ -61,19 +61,18 @@
         },
         "linktext": {
           "config": {
-            "label": "",
+            "label": "Link Text",
             "placeholder": ""
           },
           "type": "Text"
         },
         "link": {
-          "type": "Link",
           "config": {
-            "label": "",
-            "id": "link",
+            "label": "Link",
             "placeholder": "",
             "allowTargetBlank": true
-          }
+          },
+          "type": "Link"
         }
       }
     }

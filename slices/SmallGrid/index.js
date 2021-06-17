@@ -24,16 +24,13 @@ const MySlice = ({ slice }) => (
           <p>{slice.primary.description}</p>
         }
       </div>
-      <div className="space-x-4 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center pt-4">
+      <div className="space-x-4 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center pt-4">
         {slice.items.map((item) => (
         <div className="border border-brand-six col-span-1 flex flex-col items-center p-4">
           <div className="w-full overflow-hidden h-72">
-            <Image
+            <img
                 src={`${item.image.url}`}
-                layout="responsive"
-                alt="Picture of the author"
-                width={`${item.image.dimensions.width}`}
-                height={`${item.image.dimensions.height}`}
+                className="w-full overflow-hidden h-72 bg-cover"
               />
           </div>
           <div className="pt-4 text-lg font-serif text-center font-light uppercase">

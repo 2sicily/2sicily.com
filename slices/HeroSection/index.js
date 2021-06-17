@@ -7,12 +7,9 @@ import {hrefResolver} from '../../prismic-configuration'
 const MySlice = ({ slice }) => (
   <section className="bg-brand-zero text-brand-gray">
     <div className="w-full overflow-hidden z-0">
-      <Image
+      <img
+          className="w-full overflow-hidden z-0 bg-cover"
           src={`${slice.primary.image.url}`}
-          layout="responsive"
-          alt="Picture of the author"
-          width={`${slice.primary.image.dimensions.width}`}
-          height={`${slice.primary.image.dimensions.height}`}
         />
     </div>
     
@@ -30,10 +27,10 @@ const MySlice = ({ slice }) => (
           <p>{slice.primary.description}</p>
         }
       </div>
-      <div className="space-x-4 w-full flex justify-center">
+      <div className="w-full flex flex-col lg:flex-row justify-center place-items-center lg:space-x-2">
         {slice.items.map((item) => (
         <Link href={hrefResolver(item.link)}>
-        <a className="bg-brand-gray border border-brand-two text-brand-zero px-3 py-2 font-serif hover:bg-opacity-90">
+        <a className="bg-brand-gray border border-brand-two text-brand-zero px-3 py-2 font-serif hover:bg-opacity-90 max-w-sm text-center mb-2">
         {
           item.linktext &&
           <p>{item.linktext}</p>

@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useState } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import { Popover, Transition, Menu } from '@headlessui/react'
 import {
   BookmarkAltIcon,
   CalendarIcon,
@@ -110,25 +110,29 @@ export default function Example({ menu }) {
               <Popover.Group as="nav" className="hidden md:flex space-x-10 justify-center z-50">
                 {menu.data.body.map((item) => (
                   item.slice_type === "Primary Pages" ?
-                  <Link href={hrefResolver(item.items[0].link)}>
+                  item.items.map((primaryPage) => (
+                  <Link href={hrefResolver(primaryPage.link)}>
                   <a 
-                  key={item.items[0].link.uid}
+                  key={primaryPage.link.uid}
                   className="text-base font-light capitalize text-gray-500 hover:text-gray-900"
                   >
-                    {item.items[0].linktext}
+                    {primaryPage.linktext}
                   </a>
                   </Link>
+                  ))
+                  
                   :
                   item.slice_type === "Dropdown" ?
-                  <Popover className="relative">
+                  <>
+                  <Menu className="relative">
                   {({ open }) => (
                     <>
-                      <Popover.Button
-                        className={classNames(
-                          open ? 'text-gray-900' : 'text-gray-500',
-                          'px-2 group bg-white rounded-md inline-flex items-center text-base font-light hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-three'
-                        )}
-                      >
+                        <Menu.Button
+                          className={classNames(
+                            open ? 'text-gray-900' : 'text-gray-500',
+                            'relative px-2 group bg-white rounded-md inline-flex items-center text-base font-light hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-three'
+                          )}
+                        >
                         <span>{item.primary.dropdown_label}</span>
                         <ChevronDownIcon
                           className={classNames(
@@ -137,9 +141,7 @@ export default function Example({ menu }) {
                           )}
                           aria-hidden="true"
                         />
-                      </Popover.Button>
-
-                      <Transition
+                         <Transition
                         show={open}
                         as={Fragment}
                         enter="transition ease-out duration-200"
@@ -149,13 +151,15 @@ export default function Example({ menu }) {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 translate-y-1"
                       >
-                        <Popover.Panel
+                        <Menu.Items
                           static
-                          className="absolute z-30 -ml-4 mt-3 transform px-2 w-screen max-w-xs sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                          className="w-screen absolute top-0 left-0 z-30 mt-10 -ml-2 transform max-w-xs -translate-x-1/4"
                         >
                           <div className="bg-white rounded-lg shadow-lg ring-1 ring-brand-three ring-opacity-100 overflow-hidden">
                             <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                            
                               {item.items.map((menu_item) => (
+                                <Menu.Item>
                                 <Link href={hrefResolver(menu_item.third_level_link)}>
                                
                                   <a
@@ -165,14 +169,20 @@ export default function Example({ menu }) {
                                     <p className="text-base font-light text-gray-900">{menu_item.third_level_link_text}</p>
                                   </a>
                                 </Link>
+                                </Menu.Item>
                               ))}
                             </div>
                           </div>
-                        </Popover.Panel>
+                        </Menu.Items>
                       </Transition>
-                    </>
+                   
+                      </Menu.Button>
+
+                      </>
                   )}
-                </Popover>
+                </Menu>
+                
+              </>
                   :
                   "Error"
                 ))
@@ -228,13 +238,15 @@ export default function Example({ menu }) {
                       ))}
                       {menu.data.body.map((item) => (
                   item.slice_type === "Primary Pages" ?
+                  item.items.map((primaryPage) => (
                   <Link
-                  href={hrefResolver(item.items[0].link)}
+                  href={hrefResolver(primaryPage.link)}
                   >
-                  <a className="text-base font-light capitalize text-gray-500 hover:text-gray-900">
-                    {item.items[0].linktext}
+                  <a key={primaryPage.link.uid} className="text-base font-light capitalize text-gray-500 hover:text-gray-900">
+                    {primaryPage.linktext}
                   </a>
                   </Link>
+                  ))
                   :
                   item.slice_type === "Dropdown" ?
                   <Popover className="relative">
@@ -306,3 +318,5 @@ export default function Example({ menu }) {
     </Popover>
   )
 }
+
+
