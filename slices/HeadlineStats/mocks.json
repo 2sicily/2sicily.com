@@ -6,9 +6,23 @@
     "version": "sktwi1xtmkfgx8626",
     "description": "HeadlineStats",
     "primary": {
-      "sleeps": 8268,
-      "bedrooms": 1057,
-      "bathrooms": 7860
+      "sleeps": 2039,
+      "bedrooms": 1678,
+      "bathrooms": 5949,
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Dolore id nostrud commodo est laboris. Laborum irure qui fugiat consequat sint culpa qui pariatur ex cillum ullamco pariatur eu.",
+          "spans": []
+        }
+      ],
+      "callToActionHeading": "recontextualize real-time relationships",
+      "callToActionDescription": "deploy one-to-one technologies",
+      "callToActionLink": {
+        "link_type": "Web",
+        "url": "https://prismic.io"
+      },
+      "callToActionLinkText": "evolve integrated solutions"
     },
     "items": [],
     "slice_type": "headline_stats"

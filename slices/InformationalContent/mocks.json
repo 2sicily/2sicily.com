@@ -1,0 +1,45 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "InformationalContent",
+    "primary": {
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Incentivize rich technologies",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Velit incididunt proident commodo id culpa incididunt eiusmod.",
+          "spans": []
+        },
+        {
+          "type": "heading1",
+          "text": "Innovate B2B blockchains",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Ullamco laborum eu sint esse est ex velit proident occaecat nostrud tempor exercitation voluptate est. Occaecat aliqua non laboris duis ea aliqua incididunt esse et aliqua magna deserunt occaecat sit. Culpa eu magna deserunt labore quis Lorem.",
+          "spans": []
+        },
+        {
+          "type": "heading1",
+          "text": "Leverage web-enabled convergence",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Ut dolor id irure est ea id. Tempor est non consequat consequat amet magna ex dolor nulla non anim dolor sit reprehenderit.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "informational_content"
+  }
+]

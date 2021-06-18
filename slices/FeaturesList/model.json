@@ -1,0 +1,34 @@
+{
+  "id": "features_list",
+  "type": "SharedSlice",
+  "name": "FeaturesList",
+  "description": "FeaturesList",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FeaturesList",
+      "primary": {
+        "heading": {
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "feature": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "feature",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

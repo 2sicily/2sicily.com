@@ -31,6 +31,44 @@
             "placeholder": ""
           },
           "type": "Number"
+        },
+        "description": {
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "callToActionHeading": {
+          "config": {
+            "label": "Call-to-Action Heading",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "callToActionDescription": {
+          "config": {
+            "label": "Call-to-Action Description",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "callToActionLink": {
+          "config": {
+            "label": "Call-to-Action Link",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "callToActionLinkText": {
+          "config": {
+            "label": "Call-to-Action Link Text",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
       },
       "items": {}

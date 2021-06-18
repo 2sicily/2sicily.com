@@ -48,7 +48,7 @@ const MySlice = ({ slice }) => (
           </div>
          
           <Link href={hrefResolver(item.link)}>
-          <a className="bg-brand-gray border border-brand-five text-brand-six px-3 py-2 font-serif hover:bg-opacity-90">
+          <a className="bg-brand-gray border border-brand-five text-brand-six hover:bg-brand-four px-3 py-2 font-serif hover:bg-opacity-90">
           {
             item.linktext &&
             <p>{item.linktext}</p>

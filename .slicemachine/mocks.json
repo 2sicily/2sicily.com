@@ -86,5 +86,40 @@
   "AzureHeaderSection": {},
   "BreadcrumbNavigation": {},
   "AccommodationImages": {},
-  "HeadlineStats": {}
+  "HeadlineStats": {
+    "primary": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "callToActionHeading": {
+        "content": null
+      },
+      "callToActionDescription": {
+        "content": null
+      },
+      "callToActionLinkText": {
+        "content": null
+      }
+    }
+  },
+  "FeaturesList": {
+    "primary": {
+      "heading": {
+        "content": null
+      }
+    }
+  },
+  "InformationalContent": {
+    "primary": {
+      "text": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 3
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "FeaturesList",
+    "primary": {
+      "heading": "seize dot-com content"
+    },
+    "items": [
+      {
+        "feature": "innovate end-to-end schemas"
+      },
+      {
+        "feature": "reintermediate frictionless infrastructures"
+      },
+      {
+        "feature": "cultivate granular solutions"
+      },
+      {
+        "feature": "target dot-com e-tailers"
+      },
+      {
+        "feature": "exploit end-to-end relationships"
+      }
+    ],
+    "slice_type": "features_list"
+  }
+]
