@@ -13,25 +13,8 @@
     "primary": {}
   },
   "ImageGallery": {
-    "primary": {
-      "galleryTitle": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      }
-    },
-    "items": {
-      "imageDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "linkLabel": {
-        "content": null
-      }
-    }
+    "primary": {},
+    "items": {}
   },
   "FeaturedImage": {},
   "QuoteSlice": {
@@ -101,5 +84,7 @@
   },
   "AccommodationGridSection": {},
   "AzureHeaderSection": {},
-  "BreadcrumbNavigation": {}
+  "BreadcrumbNavigation": {},
+  "AccommodationImages": {},
+  "HeadlineStats": {}
 }

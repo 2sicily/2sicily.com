@@ -1,0 +1,39 @@
+{
+  "id": "headline_stats",
+  "type": "SharedSlice",
+  "name": "HeadlineStats",
+  "description": "HeadlineStats",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeadlineStats",
+      "primary": {
+        "sleeps": {
+          "config": {
+            "label": "Max number of guests",
+            "placeholder": ""
+          },
+          "type": "Number"
+        },
+        "bedrooms": {
+          "config": {
+            "label": "Number of bedrooms",
+            "placeholder": ""
+          },
+          "type": "Number"
+        },
+        "bathrooms": {
+          "config": {
+            "label": "Number of bathrooms",
+            "placeholder": ""
+          },
+          "type": "Number"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

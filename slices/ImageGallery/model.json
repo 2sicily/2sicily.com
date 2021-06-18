@@ -10,53 +10,15 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "ImageGallery",
-      "primary": {
-        "galleryTitle": {
-          "config": {
-            "label": "Gallery Title",
-            "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
-          },
-          "type": "StructuredText"
-        }
-      },
+      "primary": {},
       "items": {
         "image": {
           "config": {
-            "label": "",
-            "constraint": {
-              "width": 727,
-              "height": 402
-            },
+            "label": "Image",
+            "constraint": {},
             "thumbnails": []
           },
           "type": "Image"
-        },
-        "imageDescription": {
-          "config": {
-            "label": "",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
-          },
-          "type": "StructuredText"
-        },
-        "link": {
-          "type": "Link",
-          "config": {
-            "label": "",
-            "id": "link",
-            "placeholder": "",
-            "allowTargetBlank": true
-          }
-        },
-        "linkLabel": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
         }
       }
     }
