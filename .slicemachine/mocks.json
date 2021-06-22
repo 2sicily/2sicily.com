@@ -121,5 +121,15 @@
         }
       }
     }
+  },
+  "MapSection": {
+    "primary": {
+      "description": {
+        "content": null
+      },
+      "heading": {
+        "content": null
+      }
+    }
   }
 }

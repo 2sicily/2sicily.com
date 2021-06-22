@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function MySlice({ slice }) {
   const [ selectedImage, setSelectedImage ] = useState(slice.items[0].image)
   return (
-    <section className="pb-8">
+    <section className="pb-8 p-4">
       <div className="w-full overflow-hidden z-0 max-w-7xl mx-auto border-2 border-brand-two">
         <Image
             src={`${selectedImage.url}`}

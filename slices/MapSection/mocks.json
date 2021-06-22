@@ -1,0 +1,19 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "MapSection",
+    "primary": {
+      "heading": "engineer revolutionary e-commerce",
+      "description": "transition extensible partnerships",
+      "location": {
+        "latitude": 48.8841267,
+        "longitude": 2.3300579
+      }
+    },
+    "items": [],
+    "slice_type": "map_section"
+  }
+]

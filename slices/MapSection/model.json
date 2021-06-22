@@ -1,0 +1,39 @@
+{
+  "id": "map_section",
+  "type": "SharedSlice",
+  "name": "MapSection",
+  "description": "MapSection",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "MapSection",
+      "primary": {
+        "heading": {
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "location": {
+          "config": {
+            "label": "Location",
+            "placeholder": ""
+          },
+          "type": "GeoPoint"
+        }
+      },
+      "items": {}
+    }
+  ]
+}
