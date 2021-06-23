@@ -24,7 +24,7 @@ const MySlice = ({ slice }) => (
           <p>{slice.primary.heading}</p>
         }
       </span>
-      <div className="text-base text-center max-w-xl mx-auto py-6 font-light">
+      <div className="text-lg text-center max-w-xl mx-auto py-6 font-light">
         {
           slice.primary.description &&
           <p>{slice.primary.description}</p>
@@ -33,7 +33,7 @@ const MySlice = ({ slice }) => (
       <div className="w-full flex flex-col lg:flex-row justify-center place-items-center lg:space-x-2">
         {slice.items.map((item) => (
         <Link href={hrefResolver(item.link)}>
-        <a className="bg-brand-gray border border-brand-two text-brand-zero px-3 py-2 font-serif hover:bg-opacity-90 max-w-sm text-center mb-2">
+        <a className="bg-brand-gray border text-lg border-brand-two text-brand-zero px-3 py-2 font-serif hover:bg-opacity-90 max-w-sm text-center mb-2">
         {
           item.linktext &&
           <p>{item.linktext}</p>

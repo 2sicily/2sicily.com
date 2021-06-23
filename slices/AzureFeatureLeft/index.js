@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {hrefResolver} from '../../prismic-configuration'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -17,14 +18,14 @@ export default function Example({ slice }) {
               <p>{slice.primary.heading}</p>
             }
           </span>
-          <div className="text-base text-left pt-4 font-light pb-8">
+          <div className="text-lg text-left pt-4 font-light pb-8">
             {
               slice.primary.description &&
               <p>{slice.primary.description}</p>
             }
           </div>
-          <Link href={`${slice.primary.link.uid}`}>
-          <a className="text-brand-gray border border-brand-two bg-brand-one px-3 py-2 font-serif hover:bg-opacity-90">
+          <Link href={hrefResolver(slice.primary.link)}>
+          <a className="text-brand-gray text-lg border border-brand-two bg-brand-one px-3 py-2 font-serif hover:bg-opacity-90">
           {slice.primary.linktext &&
             slice.primary.linktext
           }

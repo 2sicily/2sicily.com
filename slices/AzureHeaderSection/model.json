@@ -12,20 +12,18 @@
       "description": "AzureHeaderSection",
       "primary": {
         "heading": {
-          "type": "Text",
           "config": {
-            "label": "",
-            "id": "heading",
+            "label": "Heading",
             "placeholder": ""
-          }
+          },
+          "type": "Text"
         },
         "description": {
-          "type": "Text",
           "config": {
-            "label": "",
-            "id": "description",
+            "label": "Description",
             "placeholder": ""
-          }
+          },
+          "type": "Text"
         }
       },
       "items": {}

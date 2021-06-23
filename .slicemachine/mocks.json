@@ -83,7 +83,16 @@
     }
   },
   "AccommodationGridSection": {},
-  "AzureHeaderSection": {},
+  "AzureHeaderSection": {
+    "primary": {
+      "heading": {
+        "content": null
+      },
+      "description": {
+        "content": null
+      }
+    }
+  },
   "BreadcrumbNavigation": {},
   "AccommodationImages": {},
   "HeadlineStats": {

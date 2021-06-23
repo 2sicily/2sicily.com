@@ -4,8 +4,8 @@ import { linkResolver } from '../../prismic-configuration'
 import { htmlSerializer } from '../../utils/prismicHelpers';
 
 const MySlice = ({ slice }) => (
-  <section className="max-w-7xl w-full mx-auto p-4">
-    <span className="title">
+  <section className="w-full mx-auto p-4 mb-16 max-w-prose">
+    <span className="">
       {
         slice.primary.text &&
         <RichText render={slice.primary.text} linkResolver={linkResolver} htmlSerializer={htmlSerializer} />

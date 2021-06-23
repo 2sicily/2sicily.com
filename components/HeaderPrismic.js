@@ -93,7 +93,7 @@ export default function Example({ menu }) {
                   </Popover.Button>
                 </div>
                 <div className="flex-1 flex justify-center">
-                <Link className="" href="/">
+                <Link className="" href={hrefResolver(menu.data.link)}>
                   <a>
                     <span className="sr-only">2 Sicily</span>
                     <img
@@ -242,7 +242,7 @@ export default function Example({ menu }) {
                   <Link
                   href={hrefResolver(primaryPage.link)}
                   >
-                  <a key={primaryPage.link.uid} className="text-base font-light capitalize text-gray-500 hover:text-gray-900">
+                  <a key={primaryPage.link.uid} className="text-lg font-light capitalize text-gray-500 hover:text-gray-900">
                     {primaryPage.linktext}
                   </a>
                   </Link>
