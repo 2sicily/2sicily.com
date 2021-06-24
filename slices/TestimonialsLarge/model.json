@@ -1,0 +1,32 @@
+{
+  "id": "testimonials_large",
+  "type": "SharedSlice",
+  "name": "TestimonialsLarge",
+  "description": "TestimonialsLarge",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TestimonialsLarge",
+      "primary": {},
+      "items": {
+        "testimonial": {
+          "config": {
+            "label": "Testimonial",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "name": {
+          "config": {
+            "label": "Name",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}

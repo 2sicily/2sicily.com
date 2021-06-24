@@ -1,0 +1,21 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TestimonialsLarge",
+    "primary": {},
+    "items": [
+      {
+        "testimonial": "exploit viral infrastructures",
+        "name": "redefine intuitive e-tailers"
+      },
+      {
+        "testimonial": "matrix B2C eyeballs",
+        "name": "incubate one-to-one e-commerce"
+      }
+    ],
+    "slice_type": "testimonials_large"
+  }
+]

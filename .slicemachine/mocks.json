@@ -140,5 +140,16 @@
         "content": null
       }
     }
+  },
+  "TestimonialsLarge": {
+    "primary": {},
+    "items": {
+      "testimonial": {
+        "content": null
+      },
+      "name": {
+        "content": null
+      }
+    }
   }
 }

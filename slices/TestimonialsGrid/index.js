@@ -24,7 +24,7 @@ const MySlice = ({ slice }) => (
           <p>{slice.primary.description}</p>
         }
       </div>
-      <div className="space-x-4 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center py-4">
+      <div className="gap-4 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center py-4">
         {slice.items.map((item) => (
         <div className="border border-brand-three bg-brand-gray col-span-1 flex flex-col items-center p-4 shadow-md">
           <div className="text-lg font-light italic text-center">
