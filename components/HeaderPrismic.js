@@ -19,6 +19,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
 import { hrefResolver } from '../prismic-configuration'
+import Image from 'next/image'
 
 
 
@@ -86,7 +87,7 @@ export default function Example({ menu }) {
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex-col items-end py-6 md:justify-start">
-              <div className="flex justify-center py-4 w-full">
+              <div className="flex justify-center items-center py-4 w-full">
                 <div className="flex-none w-10 -mr-2 -my-2 md:hidden">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-three">
                     <span className="sr-only">Open menu</span>
@@ -97,11 +98,16 @@ export default function Example({ menu }) {
                 <Link className="" href={hrefResolver(menu.data.link)}>
                   <a>
                     <span className="sr-only">2 Sicily</span>
-                    <img
-                      className="h-12 w-auto sm:h-20"
+                    <div className="h-auto w-auto">
+                      <img
                       src={menu.data.logo.url}
+                      className="object-contain h-14 sm:h-20 lg:h-24"
                       alt=""
-                    />
+                      // width={`${menu.data.logo.dimensions.width}`}
+                      // height={`${menu.data.logo.dimensions.height}`}
+                      />
+                    </div>
+                    
                   </a>
                 </Link>
                 </div>

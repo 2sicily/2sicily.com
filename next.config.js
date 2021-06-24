@@ -11,6 +11,6 @@ module.exports = withTM({
     defaultLocale: 'en-gb',
   },
   images: {
-    domains: ['images.prismic.io'],
+    domains: ['images.prismic.io', 'twosicily.cdn.prismic.io'],
   },
 })
