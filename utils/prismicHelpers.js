@@ -65,31 +65,31 @@ export const htmlSerializer = function(type, element, content, children, key) {
 
     // Add a class to paragraph elements
     case Elements.paragraph:
-      props = {className: 'font-light text-lg text-gray-800 py-2'};
+      props = {className: 'font-light text-lg text-gray-800 py-2 w-full'};
       return React.createElement('p', propsWithUniqueKey(props, key), children);
 
     case Elements.heading1:
-      props = {className: 'font-light text-3xl text-gray-800 py-2'};
+      props = {className: 'font-light text-3xl text-gray-800 py-2 w-full'};
       return React.createElement('h1', propsWithUniqueKey(props, key), children);  
 
     case Elements.heading2:
-      props = {className: 'font-light text-2xl text-gray-800 py-2'};
+      props = {className: 'font-light text-2xl text-gray-800 py-2 w-full'};
       return React.createElement('h2', propsWithUniqueKey(props, key), children); 
 
     case Elements.heading3:
-      props = {className: 'font-light text-xl text-gray-800 py-2'};
+      props = {className: 'font-light text-xl text-gray-800 py-2 w-full'};
       return React.createElement('h3', propsWithUniqueKey(props, key), children);
 
     case Elements.heading4:
-      props = {className: 'font-light text-lg text-gray-800 py-2'};
+      props = {className: 'font-light text-lg text-gray-800 py-2 w-full'};
       return React.createElement('h4', propsWithUniqueKey(props, key), children);  
 
     case Elements.heading5:
-      props = {className: 'font-light text-lg text-gray-800 py-2 uppercase'};
+      props = {className: 'font-light text-lg text-gray-800 py-2 w-full uppercase'};
       return React.createElement('h5', propsWithUniqueKey(props, key), children); 
 
     case Elements.heading6:
-      props = {className: 'font-light text-base text-gray-800 py-2 uppercase'};
+      props = {className: 'font-light text-base text-gray-800 py-2 w-full uppercase'};
       return React.createElement('h6', propsWithUniqueKey(props, key), children); 
 
     // Don't wrap images in a <p> tag
@@ -102,7 +102,7 @@ export const htmlSerializer = function(type, element, content, children, key) {
       const targetAttr = element.data.target ? { target: element.data.target } : {};
       const relAttr = element.data.target ? { rel: 'noopener' } : {};
       props = Object.assign({
-        className: 'text-brand-zero underline',
+        className: 'text-brand-zero underline w-full',
         href: element.data.url || linkResolver(element.data)
       }, targetAttr, relAttr);
       return React.createElement('a', propsWithUniqueKey(props, key), children);
