@@ -6,24 +6,25 @@ export default function MySlice({ slice }) {
   const [ selectedImage, setSelectedImage ] = useState(slice.items[0].image)
   return (
     <section className="pb-8 p-4">
-      <div className="w-full overflow-hidden z-0 max-w-7xl mx-auto border-2 border-brand-two">
-        <Image
+      <div className="max-w-7xl mx-auto">
+      <div className="z-0 border-2 border-brand-two aspect-w-16 aspect-h-9">
+        <img
             src={`${selectedImage.url}`}
-            layout="responsive"
             alt=""
-            width={`${selectedImage.dimensions.width}`}
-            height={`${selectedImage.dimensions.height}`}
+            className="object-cover"
           />
+      </div>
       </div>
       <div className="pt-2 max-w-7xl mx-auto grid grid-cols-5 h-min gap-2">
       {slice.items.map((item) => (
-        <button className="hover:opacity-75 overflow-hidden col-span-1 focus:outline-none border-2 border-brand-two h-min" onClick={() => setSelectedImage(item.image)}>
-        <Image
+        <button className="hover:opacity-75 overflow-hidden col-span-1 focus:outline-none border-2 border-brand-two h-min aspect-w-16 aspect-h-9" onClick={() => setSelectedImage(item.image)}>
+        <img
             src={`${item.image.url}`}
-            layout="responsive"
+            // layout="responsive"
             alt=""
-            width={`${item.image.dimensions.width}`}
-            height={`${item.image.dimensions.height}`}
+            className="object-cover"
+            // width={`${item.image.dimensions.width}`}
+            // height={`${item.image.dimensions.height}`}
           />
       </button>
       ))}

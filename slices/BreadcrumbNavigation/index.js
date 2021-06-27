@@ -13,17 +13,17 @@ export default function MySlice({ slice }) {
 
   if (router.query.accommodation_type) {
     pages.push({name: 'Places To Stay', href: `/${router.locale ? router.locale : ''}/places-to-stay/all`})
-    pages.push({name: router.query.accommodation_type.replaceAll('-', ' '), href: `/${router.locale ? router.locale : ''}/places-to-stay/${router.query.accommodation_type}`})
+    pages.push({name: router.query.accommodation_type.replace(/-/g, ' '), href: `/${router.locale ? router.locale : ''}/places-to-stay/${router.query.accommodation_type}`})
   }
   if (router.query.accommodation_name) {
-    pages.push({name: router.query.accommodation_name.replaceAll('-', ' '), href: `/${router.locale ? router.locale : ''}/places-to-stay/${router.query.accommodation_type}/${router.query.accommodation_name}`})
+    pages.push({name: router.query.accommodation_name.replace(/-/g, ' '), href: `/${router.locale ? router.locale : ''}/places-to-stay/${router.query.accommodation_type}/${router.query.accommodation_name}`})
   }
   if (router.query.information_page_url) {
     pages.push({name: 'Information', href: `/${router.locale ? router.locale : ''}/information/all`})
-    pages.push({name: router.query.information_page_url.replaceAll('-', ' '), href: `/${router.locale ? router.locale : ''}/information/${router.query.information_page_url}`})
+    pages.push({name: router.query.information_page_url.replace(/-/g, ' '), href: `/${router.locale ? router.locale : ''}/information/${router.query.information_page_url}`})
   }
   if (router.query.primary_page_url) {
-    pages.push({name: router.query.primary_page_url.replaceAll('-', ' '), href: `/${router.locale ? router.locale : ''}/${router.query.primary_page_url}`})
+    pages.push({name: router.query.primary_page_url.replace(/-/g, ' '), href: `/${router.locale ? router.locale : ''}/${router.query.primary_page_url}`})
   }
 
 
