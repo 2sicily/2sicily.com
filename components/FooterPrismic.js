@@ -27,7 +27,7 @@ import {hrefResolver} from '../prismic-configuration'
                   {footer.data.body[0].items.map((item) => (
                     <li key={item.link.uid}>
                     <Link href={hrefResolver(item.link)}>
-                        <a className="font-light text-base text-gray-500 hover:text-gray-900">
+                        <a className="font-light text-base text-gray-500 hover:text-black">
                         {item.linktext}
                         </a>
                     </Link>
@@ -43,7 +43,7 @@ import {hrefResolver} from '../prismic-configuration'
                   {footer.data.body[1].items.map((item) => (
                     <li key={item.link.uid}>
                     <Link href={hrefResolver(item.link)}>
-                        <a className="font-light text-base text-gray-500 hover:text-gray-900">
+                        <a className="font-light text-base text-gray-500 hover:text-black">
                         {item.linktext}
                         </a>
                     </Link>
@@ -62,7 +62,7 @@ import {hrefResolver} from '../prismic-configuration'
                   {footer.data.body[2].items.map((item) => (
                     <li key={item.link.uid}>
                     <Link href={hrefResolver(item.link)}>
-                        <a className="font-light text-base text-gray-500 hover:text-gray-900">
+                        <a className="font-light text-base text-gray-500 hover:text-black">
                         {item.linktext}
                         </a>
                     </Link>
@@ -78,7 +78,7 @@ import {hrefResolver} from '../prismic-configuration'
                 {footer.data.body[2].items.map((item) => (
                     <li key={item.link.uid}>
                     <Link href={hrefResolver(item.link)}>
-                        <a className="font-light text-base text-gray-500 hover:text-gray-900">
+                        <a className="font-light text-base text-gray-500 hover:text-black">
                         {item.linktext}
                         </a>
                     </Link>

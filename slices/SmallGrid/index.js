@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { hrefResolver } from '../../prismic-configuration'
 
 const MySlice = ({ slice }) => (
-  <section className="bg-brand-gray text-gray-800 py-12 px-8">
+  <section className="bg-brand-gray text-black py-12 px-8">
     <div className="max-w-7xl mx-auto">
       <div className="border-t border-brand-six w-24 pb-4"></div>
       <div className="uppercase text-left text-base font-light pb-2">

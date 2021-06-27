@@ -121,7 +121,7 @@ export default function Example({ menu }) {
                   <Link href={hrefResolver(primaryPage.link)}>
                   <a 
                   key={primaryPage.link.uid}
-                  className="text-base font-light capitalize text-gray-500 hover:text-gray-900"
+                  className="text-base font-light capitalize text-gray-500 hover:text-black"
                   >
                     {primaryPage.linktext}
                   </a>
@@ -136,8 +136,8 @@ export default function Example({ menu }) {
                     <>
                         <Menu.Button
                           className={classNames(
-                            open ? 'text-gray-900' : 'text-gray-500',
-                            'relative px-2 group bg-white rounded-md inline-flex items-center text-base font-light hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-three'
+                            open ? 'text-black' : 'text-gray-500',
+                            'relative px-2 group bg-white rounded-md inline-flex items-center text-base font-light hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-three'
                           )}
                         >
                         <span>{item.primary.dropdown_label}</span>
@@ -173,7 +173,7 @@ export default function Example({ menu }) {
                                   className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                                   key={menu_item.third_level_link.uid}
                                   >
-                                    <p className="text-base font-light text-gray-900">{menu_item.third_level_link_text}</p>
+                                    <p className="text-base font-light text-black">{menu_item.third_level_link_text}</p>
                                   </a>
                                 </Link>
                                 </Menu.Item>
@@ -235,7 +235,7 @@ export default function Example({ menu }) {
                   <Link
                   href={hrefResolver(primaryPage.link)}
                   >
-                  <a key={primaryPage.link.uid} className="text-base py-2 px-2 font-light capitalize text-gray-500 hover:text-gray-900">
+                  <a key={primaryPage.link.uid} className="text-base py-2 px-2 font-light capitalize text-gray-500 hover:text-black">
                     {primaryPage.linktext}
                   </a>
                   </Link>
@@ -247,7 +247,7 @@ export default function Example({ menu }) {
     <Disclosure>
       {({ open }) => (
         <>
-      <Disclosure.Button className="inline-flex items-center text-left py-2 px-2 text-base font-light capitalize text-gray-500 hover:text-gray-900">
+      <Disclosure.Button className="inline-flex items-center text-left py-2 px-2 text-base font-light capitalize text-gray-500 hover:text-black">
             <span className="flex-1">{item.primary.dropdown_label}</span>
             
             <ChevronRightIcon
@@ -262,7 +262,7 @@ export default function Example({ menu }) {
                                   className="py-2 px-4 flex items-start hover:bg-gray-100"
                                   key={menu_item.third_level_link.uid}
                                   >
-                                    <p className="text-sm font-light text-gray-900">{menu_item.third_level_link_text}</p>
+                                    <p className="text-sm font-light text-black">{menu_item.third_level_link_text}</p>
                                   </a>
                                 </Link>
                               ))}

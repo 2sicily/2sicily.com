@@ -27,14 +27,14 @@ const MySlice = ({ slice }) => (
         <span className="font-light ml-2 text-brand-zero">{slice.primary.bathrooms}&nbsp;bathrooms</span>
       </div>
     </div>
-    <div className="font-light text-gray-900">
+    <div className="font-light text-black">
       {RichText.render(slice.primary.description, linkResolver)}
     </div>
   </div>
   <div className="w-full xl:w-1/3 p-4 max-w-md text-center">
     <div className="border border-brand-zero shadow-md p-4">
-      <div className="font-serif text-lg text-gray-900">{slice.primary.callToActionHeading}</div>
-      <div className="text-base font-light pt-2 pb-3 text-gray-900">{slice.primary.callToActionDescription}</div>
+      <div className="font-serif text-lg text-black">{slice.primary.callToActionHeading}</div>
+      <div className="text-base font-light pt-2 pb-3 text-black">{slice.primary.callToActionDescription}</div>
       <Link className="" href={hrefResolver(slice.primary.callToActionLink)}>
         <a>
         <button className="w-full font-light text-brand-white hover:bg-brand-zero bg-brand-two border border-brand-zero py-2 px-3">

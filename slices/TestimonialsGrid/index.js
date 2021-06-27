@@ -30,13 +30,13 @@ const MySlice = ({ slice }) => (
           <div className="text-lg font-light italic text-center">
                   {
                     item.testimonial &&
-                    <p className="text-gray-800">"<br></br>{item.testimonial}</p>
+                    <p className="text-black">"<br></br>{item.testimonial}</p>
                   }
           </div>
           <div className="text-base text-center py-4 font-light capitalize">
                   {
                     item.name &&
-                    <p className="text-gray-800">{item.name}</p>
+                    <p className="text-black">{item.name}</p>
                   }
           </div>
 
