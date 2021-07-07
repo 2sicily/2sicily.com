@@ -160,9 +160,9 @@ export default function Example({ menu }) {
                       >
                         <Menu.Items
                           static
-                          className="w-screen absolute top-0 left-0 z-30 mt-10 -ml-2 transform max-w-xs -translate-x-1/4"
+                          className="w-screen absolute top-0 left-0 z-30 mt-10 -ml-2 transform max-w-xs -translate-x-1/4 focus:outline-none"
                         >
-                          <div className="bg-white rounded-lg shadow-lg ring-1 ring-brand-three ring-opacity-100 overflow-hidden">
+                          <div className="bg-white rounded-lg shadow-lg ring-1 ring-brand-three focus:outline-none ring-opacity-100 overflow-hidden">
                             <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             
                               {item.items.map((menu_item) => (
