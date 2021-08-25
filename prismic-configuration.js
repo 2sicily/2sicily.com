@@ -64,6 +64,9 @@ module.exports = {
     if (url.includes('it-it')) {
       return `${url.replace('/it-it', '')}`;
     }
+    if (url.includes('de-de')) {
+      return `${url.replace('/de-de', '')}`;
+    }
     return url;
   },
 
