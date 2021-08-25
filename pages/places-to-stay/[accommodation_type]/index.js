@@ -24,13 +24,15 @@ export async function getStaticProps({
   locales,
 }) {
   const client = Client();
+  const { currentLang, isMyMainLanguage } = manageLocal(locales, locale)
+
   const doc =
     (await client.getByUID(
       'grid_page',
       params.accommodation_type,
-      { lang: locale }
+      { lang: currentLang }
     )) || {};
-  const { currentLang, isMyMainLanguage } = manageLocal(locales, locale)
+  
   const menu =
     (await client.getSingle('menu', { lang: locale })) ||
     {};
@@ -39,7 +41,7 @@ export async function getStaticProps({
     {};
   if (params.accommodation_type === 'all') {
     const documents = await queryRepeatableDocuments(
-      (doc) => doc.type === 'accommodation_page' && doc.data.accommodation_type !== params.accommodation_type
+      (doc) => doc.type === 'accommodation_page' && doc.data.accommodation_type !== params.accommodation_type && doc.lang === currentLang
       );
       return {
         props: {
@@ -55,7 +57,7 @@ export async function getStaticProps({
       };
   } else {
     const documents = await queryRepeatableDocuments(
-      (doc) => doc.type === 'accommodation_page' && doc.data.accommodation_type === params.accommodation_type
+      (doc) => doc.type === 'accommodation_page' && doc.data.accommodation_type === params.accommodation_type && doc.lang === currentLang
       );
       return {
         props: {
