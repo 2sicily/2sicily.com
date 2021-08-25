@@ -199,7 +199,8 @@ export default function Example({ menu, lang }) {
                   }
                 </Popover.Group>
                 <div className="flex-1"></div>
-                <LanguageDropdown lang={lang} />
+                <div className="hidden md:flex"><LanguageDropdown lang={lang} /></div>
+                
               </div>
               
               
@@ -283,6 +284,7 @@ export default function Example({ menu, lang }) {
                 ))
                 }
                     </nav>
+                    <div className="flex w-full justify-end"><LanguageDropdown lang={lang} /></div>
                   </div>
                 </div>
                 
