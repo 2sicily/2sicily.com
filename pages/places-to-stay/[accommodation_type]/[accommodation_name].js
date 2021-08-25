@@ -23,12 +23,15 @@ export async function getStaticProps({
   locale,
   locales,
 }) {
+  const { currentLang, isMyMainLanguage } = manageLocal(locales, locale)
+
+
   const client = Client();
   const doc =
     (await client.getByUID(
       'accommodation_page',
       params.accommodation_name,
-      { lang: locale }
+      { lang: currentLang }
     )) || {};
   const menu =
     (await client.getSingle('menu', { lang: locale })) ||
@@ -37,7 +40,7 @@ export async function getStaticProps({
   (await client.getSingle('footer_navigation', { lang: locale })) ||
   {};
 
-  const { currentLang, isMyMainLanguage } = manageLocal(locales, locale)
+  
 
   return {
     props: {
