@@ -29,7 +29,7 @@ export default function LanguageDropdown(props) {
   return (  
     <Menu as="div" className="w-20 relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex justify-center w-full rounded-lg border border-gray-300 shadow-sm px-4 py-2 bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-brand-three">
+        <Menu.Button className="inline-flex justify-center w-full rounded-lg border border-brand-three shadow-sm px-4 py-2 bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-brand-three">
         {props.lang == 'en-gb' ? 
         <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
             <path fill="#012169" d="M0 0h640v480H0z"/>
