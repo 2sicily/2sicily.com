@@ -10,7 +10,7 @@ const Page = (props) => {
   return (
 
     // JSON.stringify(props.doc.data.meta_title)
-    <Layout props={props.doc} menu={props.menu} footer={props.footer}>
+    <Layout props={props.doc} menu={props.menu} footer={props.footer} lang={props.lang.currentLang}>
       <SliceZone slices={props.doc.data.body} resolver={resolver} />
     </Layout>
   )

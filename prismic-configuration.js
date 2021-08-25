@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import smConfig from "./sm.json";
 
 if (!smConfig.apiEndpoint) {
@@ -55,5 +56,15 @@ module.exports = {
     }
     return '/';
   },
-  
+
+  removeLanguage: function(url) {
+    if (url.includes('en-gb')) {
+      return `${url.replace('/en-gb', '')}`;
+    }
+    if (url.includes('it-it')) {
+      return `${url.replace('/it-it', '')}`;
+    }
+    return url;
+  },
+
 };

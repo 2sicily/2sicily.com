@@ -20,7 +20,7 @@ const Layout = ({ children, props, menu, footer }) => {
           />
         </Head>
         
-        <HeaderPrismic menu={menu} />
+        <HeaderPrismic menu={menu} lang={props.lang} />
         <main>{children}</main>
         <FooterPrismic footer={footer} />
       </div>

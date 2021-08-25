@@ -20,6 +20,7 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
 import { hrefResolver } from '../prismic-configuration'
 import Image from 'next/image'
+import LanguageDropdown from './LanguageDropdown'
 
 
 
@@ -27,7 +28,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example({ menu }) {
+export default function Example({ menu, lang }) {
   const solutions = [
     {
       name: 'Analytics',
@@ -113,89 +114,95 @@ export default function Example({ menu }) {
                 </div>
                 <div className="flex-none w-10"></div>
               </div>
-              
-              <Popover.Group as="nav" className="hidden md:flex space-x-10 justify-center z-50">
-                {menu.data.body.map((item) => (
-                  item.slice_type === "Primary Pages" ?
-                  item.items.map((primaryPage) => (
-                  <Link href={hrefResolver(primaryPage.link)}>
-                  <a 
-                  key={primaryPage.link.uid}
-                  className="text-base font-light capitalize text-gray-500 hover:text-black"
-                  >
-                    {primaryPage.linktext}
-                  </a>
-                  </Link>
-                  ))
-                  
-                  :
-                  item.slice_type === "Dropdown" ?
-                  <>
-                  <Menu className="relative">
-                  {({ open }) => (
+              <div className="flex justify-center">
+                <div className="flex-none w-20"></div>
+                <div className="flex-1"></div>
+                <Popover.Group as="nav" className="hidden md:flex space-x-10 justify-center z-50 items-center">
+                  {menu.data.body.map((item) => (
+                    item.slice_type === "Primary Pages" ?
+                    item.items.map((primaryPage) => (
+                    <Link href={hrefResolver(primaryPage.link)}>
+                    <a 
+                    key={primaryPage.link.uid}
+                    className="text-base font-light capitalize text-gray-500 hover:text-black"
+                    >
+                      {primaryPage.linktext}
+                    </a>
+                    </Link>
+                    ))
+                    
+                    :
+                    item.slice_type === "Dropdown" ?
                     <>
-                        <Menu.Button
-                          className={classNames(
-                            open ? 'text-black' : 'text-gray-500',
-                            'relative px-2 group bg-white rounded-md inline-flex items-center text-base font-light hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-three'
-                          )}
+                    <Menu className="relative">
+                    {({ open }) => (
+                      <>
+                          <Menu.Button
+                            className={classNames(
+                              open ? 'text-black' : 'text-gray-500',
+                              'relative px-2 group bg-white rounded-md inline-flex items-center text-base font-light hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-three'
+                            )}
+                          >
+                          <span>{item.primary.dropdown_label}</span>
+                          <ChevronDownIcon
+                            className={classNames(
+                              open ? 'text-gray-600' : 'text-gray-400',
+                              'ml-2 h-5 w-5 group-hover:text-gray-500'
+                            )}
+                            aria-hidden="true"
+                          />
+                          <Transition
+                          show={open}
+                          as={Fragment}
+                          enter="transition ease-out duration-200"
+                          enterFrom="opacity-0 translate-y-1"
+                          enterTo="opacity-100 translate-y-0"
+                          leave="transition ease-in duration-150"
+                          leaveFrom="opacity-100 translate-y-0"
+                          leaveTo="opacity-0 translate-y-1"
                         >
-                        <span>{item.primary.dropdown_label}</span>
-                        <ChevronDownIcon
-                          className={classNames(
-                            open ? 'text-gray-600' : 'text-gray-400',
-                            'ml-2 h-5 w-5 group-hover:text-gray-500'
-                          )}
-                          aria-hidden="true"
-                        />
-                         <Transition
-                        show={open}
-                        as={Fragment}
-                        enter="transition ease-out duration-200"
-                        enterFrom="opacity-0 translate-y-1"
-                        enterTo="opacity-100 translate-y-0"
-                        leave="transition ease-in duration-150"
-                        leaveFrom="opacity-100 translate-y-0"
-                        leaveTo="opacity-0 translate-y-1"
-                      >
-                        <Menu.Items
-                          static
-                          className="w-screen absolute top-0 left-0 z-30 mt-10 -ml-2 transform max-w-xs -translate-x-1/4 focus:outline-none"
-                        >
-                          <div className="bg-white rounded-lg shadow-lg ring-1 ring-brand-three focus:outline-none ring-opacity-100 overflow-hidden">
-                            <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                            
-                              {item.items.map((menu_item) => (
-                                <Menu.Item>
-                                <Link href={hrefResolver(menu_item.third_level_link)}>
-                               
-                                  <a
-                                  className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                                  key={menu_item.third_level_link.uid}
-                                  >
-                                    <p className="text-base font-light text-black">{menu_item.third_level_link_text}</p>
-                                  </a>
-                                </Link>
-                                </Menu.Item>
-                              ))}
+                          <Menu.Items
+                            static
+                            className="w-screen absolute top-0 left-0 z-30 mt-10 -ml-2 transform max-w-xs -translate-x-1/4 focus:outline-none"
+                          >
+                            <div className="bg-white rounded-lg shadow-lg ring-1 ring-brand-three focus:outline-none ring-opacity-100 overflow-hidden">
+                              <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                              
+                                {item.items.map((menu_item) => (
+                                  <Menu.Item>
+                                  <Link href={hrefResolver(menu_item.third_level_link)}>
+                                
+                                    <a
+                                    className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                                    key={menu_item.third_level_link.uid}
+                                    >
+                                      <p className="text-base font-light text-black">{menu_item.third_level_link_text}</p>
+                                    </a>
+                                  </Link>
+                                  </Menu.Item>
+                                ))}
+                              </div>
                             </div>
-                          </div>
-                        </Menu.Items>
-                      </Transition>
-                   
-                      </Menu.Button>
+                          </Menu.Items>
+                        </Transition>
+                    
+                        </Menu.Button>
 
-                      </>
-                  )}
-                </Menu>
-                
-              </>
-                  :
-                  "Error"
-                ))
-                }
-                
-              </Popover.Group>
+                        </>
+                    )}
+                  </Menu>
+                  
+                </>
+                    :
+                    "Error"
+                  ))
+                  }
+                </Popover.Group>
+                <div className="flex-1"></div>
+                <LanguageDropdown lang={lang} />
+              </div>
+              
+              
             </div>
           </div>
 
@@ -244,32 +251,32 @@ export default function Example({ menu }) {
                   item.slice_type === "Dropdown" ?
 
 
-    <Disclosure>
-      {({ open }) => (
-        <>
-      <Disclosure.Button className="inline-flex items-center text-left py-2 px-2 text-base font-light capitalize text-gray-500 hover:text-black">
-            <span className="flex-1">{item.primary.dropdown_label}</span>
-            
-            <ChevronRightIcon
-              className={`${open ? "transform rotate-90 " : ""}flex-none h-4 w-4`}
-            />
-          </Disclosure.Button>
-      <Disclosure.Panel className="-mt-1 text-gray-500 bg-gray-50 rounded-b-md">
-      {item.items.map((menu_item) => (
-                                <Link href={hrefResolver(menu_item.third_level_link)}
-                                >
-                                  <a
-                                  className="py-2 px-4 flex items-start hover:bg-gray-100"
-                                  key={menu_item.third_level_link.uid}
-                                  >
-                                    <p className="text-sm font-light text-black">{menu_item.third_level_link_text}</p>
-                                  </a>
-                                </Link>
-                              ))}
-      </Disclosure.Panel>
-      </>
-      )}
-    </Disclosure>
+                  <Disclosure>
+                    {({ open }) => (
+                      <>
+                    <Disclosure.Button className="inline-flex items-center text-left py-2 px-2 text-base font-light capitalize text-gray-500 hover:text-black">
+                          <span className="flex-1">{item.primary.dropdown_label}</span>
+                          
+                          <ChevronRightIcon
+                            className={`${open ? "transform rotate-90 " : ""}flex-none h-4 w-4`}
+                          />
+                        </Disclosure.Button>
+                    <Disclosure.Panel className="-mt-1 text-gray-500 bg-gray-50 rounded-b-md">
+                    {item.items.map((menu_item) => (
+                                              <Link href={hrefResolver(menu_item.third_level_link)}
+                                              >
+                                                <a
+                                                className="py-2 px-4 flex items-start hover:bg-gray-100"
+                                                key={menu_item.third_level_link.uid}
+                                                >
+                                                  <p className="text-sm font-light text-black">{menu_item.third_level_link_text}</p>
+                                                </a>
+                                              </Link>
+                                            ))}
+                    </Disclosure.Panel>
+                    </>
+                    )}
+                  </Disclosure>
 
                   :
                   "Error"
