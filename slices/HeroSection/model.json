@@ -35,9 +35,7 @@
             "id": "description",
             "placeholder": ""
           }
-        }
-      },
-      "items": {
+        },
         "link": {
           "type": "Link",
           "config": {
@@ -55,7 +53,8 @@
             "placeholder": ""
           }
         }
-      }
+      },
+      "items": {}
     }
   ]
 }

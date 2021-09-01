@@ -20,13 +20,18 @@ const MySlice = ({ slice }) => (
       }
     </div>
     {slice.primary.linktext && slice.primary.link &&
-    <div className="w-full flex">
+    <div className="w-full flex justify-center">
       <Link href={hrefResolver(slice.primary.link)}>
-      <a className="mx-auto">
-      <button className="mx-auto  text-lg bg-brand-gray border border-brand-five text-brand-six px-3 py-2 font-serif hover:bg-opacity-90">
-            <p>{slice.primary.linktext}</p>
-      </button>
-      </a>
+          <a className="text-lg text-brand-white font-sans italic hover:text-opacity-70 flex items-center">
+          <div>
+          {slice.primary.linktext &&
+            slice.primary.linktext
+          }
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+          </a>
       </Link>
     </div>
     }
