@@ -16,20 +16,32 @@ export default function LanguageDropdown(props) {
             param: 'en-gb'
         },
         {
-            language: 'Italian',
+            language: 'Italiano',
             param: 'it-it'
         },
         {
-            language: 'German',
+            language: 'Deútsche',
             param: 'de-de'
         }
     ]
 
 
   return (  
-    <Menu as="div" className="w-20 relative inline-block text-left">
+    <>
+    <div className="flex items-center">
+    {/* <div className="text-sm font-light pr-2 text-gray-500">
+      Select Language
+    </div> */}
+    <Menu as="div" className="w-30 relative inline-block text-left">
+      
       <div>
-        <Menu.Button className="inline-flex justify-center w-full rounded-lg border border-brand-three shadow-sm px-4 py-2 bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-brand-three">
+        <Menu.Button className="inline-flex justify-center items-center w-full rounded-lg border border-brand-three shadow-sm px-4 py-2 bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-brand-three">
+        {/* <div className="text-small font-light text-gray-500 pr-2">
+        
+        {props.lang == 'en-gb' ? 'EN' : props.lang == 'it-it' ? 'IT' : 'DE'} 
+   
+        </div> */}
+        
         {props.lang == 'en-gb' ? 
         <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
             <path fill="#012169" d="M0 0h640v480H0z"/>
@@ -90,5 +102,7 @@ export default function LanguageDropdown(props) {
         </Menu.Items>
       </Transition>
     </Menu>
+    </div>
+    </>
   )
 }
