@@ -35,13 +35,22 @@ const MySlice = ({ slice }) => (
     <div className="border border-brand-zero shadow-md p-4">
       <div className="font-serif text-lg text-black">{slice.primary.callToActionHeading}</div>
       <div className="text-base font-light pt-2 pb-3 text-black">{slice.primary.callToActionDescription}</div>
-      <Link className="" href={hrefResolver(slice.primary.callToActionLink)}>
-        <a>
-        <button className="w-full font-light text-brand-white hover:bg-brand-zero bg-brand-two border border-brand-zero py-2 px-3">
-        {slice.primary.callToActionLinkText}
-        </button>
-        </a>
+      <div className="flex w-full justify-center">
+      {slice.primary.callToActionLink && slice.primary.callToActionLinkText && 
+      <Link href={hrefResolver(slice.primary.callToActionLink)}>
+          <a className="text-lg text-brand-one font-sans italic hover:text-opacity-70 flex items-center">
+          <div>
+          {slice.primary.callToActionLinkText &&
+            slice.primary.callToActionLinkText
+          }
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+          </a>
       </Link>
+      }
+      </div>
     </div>
   </div>
   </section>
