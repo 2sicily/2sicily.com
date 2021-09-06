@@ -63,7 +63,7 @@ export default function Example({ menu, lang }) {
                 <div className="flex-none w-10"></div>
               </div>
               <div className="flex justify-center">
-                <div className="flex-none w-20"></div>
+                <div className="flex-none w-48"></div>
                 <div className="flex-1"></div>
                 <Popover.Group as="nav" className="hidden md:flex space-x-10 justify-center z-50 items-center">
                   {menu.data.body.map((item) => (
@@ -147,7 +147,7 @@ export default function Example({ menu, lang }) {
                   }
                 </Popover.Group>
                 <div className="flex-1"></div>
-                <div className="hidden md:flex"><LanguageDropdown lang={lang} /></div>
+                <div className="hidden md:flex w-50"><LanguageDropdown lang={lang} /></div>
                 
               </div>
               
