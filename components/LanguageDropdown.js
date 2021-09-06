@@ -29,9 +29,9 @@ export default function LanguageDropdown(props) {
   return (  
     <>
     <div className="flex items-center">
-    {/* <div className="text-sm font-light pr-2 text-gray-500">
+    <div className="text-sm font-light pr-2 text-gray-500">
       Select Language
-    </div> */}
+    </div>
     <Menu as="div" className="w-30 relative inline-block text-left">
       
       <div>
