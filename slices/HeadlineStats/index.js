@@ -4,7 +4,7 @@ import { linkResolver, hrefResolver } from '../../prismic-configuration'
 import Link from 'next/link'
 
 const MySlice = ({ slice }) => (
-  <section className="max-w-7xl mx-auto flex flex-col xl:flex-row xl:items-start items-center">
+  <section className="max-w-5xl mx-auto flex flex-col xl:flex-row xl:items-start items-center">
   <div className="w-full xl:w-2/3 p-4">
     <div className="border-t border-b border-brand-zero flex flex-col sm:flex-row justify-center p-4 mb-4 space-x-0 sm:space-x-8">
       <div className="flex w-min self-center py-1">

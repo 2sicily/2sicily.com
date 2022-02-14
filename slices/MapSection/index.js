@@ -27,7 +27,7 @@ export default function MySlice({ slice }) {
 
   return (
     <section className="mb-8">
-      <div className="w-screen max-w-7xl mx-auto p-4">
+      <div className="w-screen max-w-5xl mx-auto p-4">
       <div className="font-light text-xl mb-4">{slice.primary.heading}</div>
       <div ref={mapContainer} className="w-full h-96">
       </div>
