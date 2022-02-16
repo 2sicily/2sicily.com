@@ -16,7 +16,7 @@ const MySlice = ({ slice }) => (
         />
     </div>
     
-    <div className="max-w-7xl mx-auto py-12 px-8">
+    <div className="max-w-5xl mx-auto py-12 px-8">
       <div className="border-t border-brand-gray w-24 mx-auto pb-8"></div>
       <span className="font-serif uppercase text-center text-3xl">
         {

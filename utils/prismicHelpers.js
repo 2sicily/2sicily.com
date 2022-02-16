@@ -103,7 +103,7 @@ export const htmlSerializer = function(type, element, content, children, key) {
       const relAttr = element.data.target ? { rel: 'noopener' } : {};
       props = Object.assign({
         className: 'text-brand-zero underline w-full',
-        href: element.data.url || linkResolver(element.data)
+        href: element.data.url || hrefResolver(element.data)
       }, targetAttr, relAttr);
       return React.createElement('a', propsWithUniqueKey(props, key), children);
 

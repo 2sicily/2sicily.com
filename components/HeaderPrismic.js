@@ -31,7 +31,7 @@ function classNames(...classes) {
 export default function Example({ menu, lang }) {
 
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-white border-b border-brand-three">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">

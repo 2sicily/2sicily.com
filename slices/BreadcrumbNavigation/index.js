@@ -28,7 +28,7 @@ export default function MySlice({ slice }) {
 
 
   return (
-    <nav className="flex p-4 bg-white border-t border-b border-brand-three" aria-label="Breadcrumb">
+    <nav className="flex p-4 bg-white border-b border-brand-three" aria-label="Breadcrumb">
       <ol className="max-w-7xl w-full mx-auto flex items-center space-x-4">
         <li>
           <div>

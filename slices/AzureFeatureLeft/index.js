@@ -10,7 +10,7 @@ export default function Example({ slice }) {
   return (
     <div className="relative bg-gray-50">
       <main className="lg:relative">
-        <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-left lg:py-24">
+        <div className="mx-auto max-w-5xl w-full pt-16 pb-20 text-left lg:py-24">
           <div className="px-8 lg:w-1/2 xl:pr-16">
           <div className="border-t border-brand-one w-24 pb-8"></div>
           <span className="font-serif uppercase text-left text-3xl">

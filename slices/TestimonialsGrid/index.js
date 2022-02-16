@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const MySlice = ({ slice }) => (
 <section className="bg-brand-zero py-12 px-8">
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <div className="border-t border-brand-gray w-24 pb-4"></div>
       <div className="uppercase text-left text-base font-light pb-2 text-brand-gray">
         {
