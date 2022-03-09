@@ -6,25 +6,40 @@
     "version": "sktwi1xtmkfgx8626",
     "description": "HeadlineStats",
     "primary": {
-      "sleeps": 2039,
-      "bedrooms": 1678,
-      "bathrooms": 5949,
+      "sleeps": 2226,
+      "bedrooms": 6895,
+      "bathrooms": 9302,
       "description": [
         {
           "type": "paragraph",
-          "text": "Dolore id nostrud commodo est laboris. Laborum irure qui fugiat consequat sint culpa qui pariatur ex cillum ullamco pariatur eu.",
+          "text": "Eiusmod deserunt anim sunt elit eu esse tempor incididunt sit aliqua in. Ipsum occaecat laboris deserunt eu cillum. Ipsum duis non consequat velit.",
           "spans": []
         }
-      ],
-      "callToActionHeading": "recontextualize real-time relationships",
-      "callToActionDescription": "deploy one-to-one technologies",
-      "callToActionLink": {
-        "link_type": "Web",
-        "url": "https://prismic.io"
-      },
-      "callToActionLinkText": "evolve integrated solutions"
+      ]
     },
-    "items": [],
+    "items": [
+      {
+        "externalLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "externalLinkText": "incubate compelling systems"
+      },
+      {
+        "externalLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "externalLinkText": "expedite rich e-tailers"
+      },
+      {
+        "externalLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "externalLinkText": "revolutionize end-to-end synergies"
+      }
+    ],
     "slice_type": "headline_stats"
   }
 ]
