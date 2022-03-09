@@ -102,6 +102,12 @@
           "patternType": "PARAGRAPH",
           "blocks": 1
         }
+      },
+      "callToActionHeading": {
+        "content": null
+      },
+      "callToActionDescription": {
+        "content": null
       }
     },
     "items": {

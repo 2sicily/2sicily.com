@@ -2,6 +2,7 @@ import React from 'react';
 import { RichText } from 'prismic-reactjs';
 import { linkResolver, hrefResolver } from '../../prismic-configuration'
 import Link from 'next/link'
+import { ExternalLinkIcon } from '@heroicons/react/outline';
 
 const MySlice = ({ slice }) => (
   <section className="max-w-5xl mx-auto flex flex-col xl:flex-row xl:items-start items-center">
@@ -31,23 +32,21 @@ const MySlice = ({ slice }) => (
       {RichText.render(slice.primary.description, linkResolver)}
     </div>
   </div>
-  <div className="w-full xl:w-1/3 p-4 max-w-md text-center">
+  <div className="w-full xl:w-1/3 p-4 max-w-md text-left">
     <div className="border border-brand-zero shadow-md p-4">
       <div className="font-serif text-lg text-black">{slice.primary.callToActionHeading}</div>
       <div className="text-base font-light pt-2 pb-3 text-black">{slice.primary.callToActionDescription}</div>
-      <div className="flex w-full justify-center">
+      <div className="flex flex-col w-full justify-start">
       {slice.items.map((item) => (
       item.externalLink && item.externalLinkText && 
       <Link href={hrefResolver(item.externalLink)}>
           <a className="text-lg text-brand-one font-sans italic hover:text-opacity-70 flex items-center">
+          {/* <ExternalLinkIcon className='w-6 h-6 ml-2' /> */}
           <div>
           {item.externalLinkText &&
             item.externalLinkText
           }
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
           </a>
       </Link>
       ))}

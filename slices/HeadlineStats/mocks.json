@@ -6,38 +6,61 @@
     "version": "sktwi1xtmkfgx8626",
     "description": "HeadlineStats",
     "primary": {
-      "sleeps": 2226,
-      "bedrooms": 6895,
-      "bathrooms": 9302,
+      "sleeps": 7648,
+      "bedrooms": 127,
+      "bathrooms": 7181,
       "description": [
         {
           "type": "paragraph",
-          "text": "Eiusmod deserunt anim sunt elit eu esse tempor incididunt sit aliqua in. Ipsum occaecat laboris deserunt eu cillum. Ipsum duis non consequat velit.",
+          "text": "Incididunt fugiat elit consequat elit nisi duis elit cillum eiusmod. Officia ea Lorem fugiat aliqua ipsum duis ut esse velit non velit.",
           "spans": []
         }
-      ]
+      ],
+      "callToActionHeading": "whiteboard bleeding-edge supply-chains",
+      "callToActionDescription": "harness 24/365 relationships"
     },
     "items": [
       {
         "externalLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://prismic.io"
         },
-        "externalLinkText": "incubate compelling systems"
+        "externalLinkText": "reinvent open-source networks"
       },
       {
         "externalLink": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "https://prismic.io"
         },
-        "externalLinkText": "expedite rich e-tailers"
+        "externalLinkText": "iterate customized solutions"
       },
       {
         "externalLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://prismic.io"
         },
-        "externalLinkText": "revolutionize end-to-end synergies"
+        "externalLinkText": "e-enable real-time paradigms"
+      },
+      {
+        "externalLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "externalLinkText": "transform integrated systems"
+      },
+      {
+        "externalLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "externalLinkText": "exploit end-to-end infomediaries"
+      },
+      {
+        "externalLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "externalLinkText": "extend robust metrics"
       }
     ],
     "slice_type": "headline_stats"

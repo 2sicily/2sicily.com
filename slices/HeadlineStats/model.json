@@ -40,6 +40,20 @@
             "single": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           },
           "type": "StructuredText"
+        },
+        "callToActionHeading": {
+          "config": {
+            "label": "Call To Action Heading",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "callToActionDescription": {
+          "config": {
+            "label": "Call To Action Description",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
       },
       "items": {
